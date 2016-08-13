@@ -3,344 +3,42 @@
 <html>
   <head> 									<!-- HEAD OF THE WEBPAGE -->
   
-  <!--WEBPAGE/APP ICONS-->
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
-<meta name="application-name" content="&nbsp;"/>
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-
-  
-  
-  
-    <title>City Sipping.com - A Place for Aspiring Coffee Connoisseurs & Beer Buffs</title>  <!-- WEBPAGE TITLE -->
-	
-	<!-- CSS STYLE SHEET FOR WHOLE WEBPAGE -->
-	<link href="css-styles-home.css" type="text/css" rel="stylesheet"/> 
-	
-	
-	<!-- GOOGLE FONT STYLES -->
-	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
-<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=ABeeZee:regular:latin'>
-
-	<!-- METADATA -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- MOBILE OPTIMIZATION; adapts to viewport being used -->
-	<meta charset="utf-8" />
-	<meta name="description"
-	content="A place for aspiring coffee connoisseurs and beer buffs, featuring local coffee shops and craft beer joints" />
-	<meta name="keywords"
-	content="coffee, beer, New York City, San Francisco, Boston, Seattle, Philadelphia, Los Angeles, Chicago, Washington, D.C., Portland, Miami" />
-	<meta name="robots"
-	content="nofollow" />
-	<meta http-equiv="author"
-	content="S. Jonathan Najmi" />
-	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
-	
-	
-	
-  <!-- JQUERY - GOOGLE -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- BOOTSTRAP -->
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-  
-  <script> <!-- SHUFFLE CITYFIGURES ON RELOAD -->
-  
-  $(document).ready(function(){
-
-          $('div#Cities').each(function(){
-
-                // get current div
-                var $div_parent = $(this);
-
-                // get array of childs in parent div
-                var $divsArr = $div_parent.children('div.cityfigure');
-
-                // sort array of childs in parent div (#sponsors) randomly
-                $divsArr.sort(function(a,b){
-
-                      // Get a random number between 0 and 10
-                      var temp = parseInt( Math.random()*10 );
-
-                      // Get 1 or 0, whether temp is odd or even
-                      var isOddOrEven = temp%2;
-
-                      // Get +1 or -1, whether temp greater or smaller than 5
-                      var isPosOrNeg = temp>5 ? 1 : -1;
-
-                      // Return -1, 0, or +1
-                      return( isOddOrEven*isPosOrNeg );
-                })
-
-                // append child items to parent
-                .appendTo($div_parent);            
-          });
-    });
-  
-  </script>
-  
-  
-  
-  <!-- SNACKBAR SCRIPT -->
-  <script>
- function myFunction() {
-    // Get the snackbar DIV
-    var x = document.getElementById("snackbar")
-
-    // Add the "show" class to DIV
-    x.className = "show";
-
-    // After 3 seconds, remove the show class from DIV
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
-}
- </script>
- 
- <!-- PICK A RANDOM CITY SCRIPT -->
- <script>
- 
- // the used links
-var links = [
-    "PROJECT1.NYC.html",
-    "PROJECT1.NYC.html",
-    "PROJECT1.NYC.html",
-    "PROJECT1.NYC.html"];
-
-randomcity = function () {
-    // get a random number between 0 and the number of links
-    var randIdx = Math.random() * links.length;
-    // round it, so it can be used as array index
-    randIdx = parseInt(randIdx, 10);
-    // construct the link to be opened
-    var link = 'file:///C:/Users/jonny/Desktop/OneDrive/HTML&CSS/PROJECT1/' + links[randIdx];
-    // open it in a new window / tab (depends on browser setting)
-    window.open(link);
-};
- 
- </script>
- 
- 
-	<!-- SHUFFLE CITYFIGURES -->
- <script>
- 
- $(function() {
-
-  $('#shufflebutton').click(function() {
-    $("div#Cities").randomize("div.cityfigure");
-  });
-
-});
-
-(function($) {
-
-$.fn.randomize = function(childElem) {
-  return this.each(function() {
-      var $this = $(this);
-      var elems = $this.children(childElem);
-
-      elems.sort(function() { return (Math.round(Math.random())-0.5); });  
-
-      $this.remove(childElem);  
-
-      for(var i=0; i < elems.length; i++)
-        $this.append(elems[i]);      
-
-  });    
-}
-})(jQuery);
- 
- 
- </script>
-  
   </head>
   <body>                                           <!-- BODY OF THE WEBPAGE -->
     
-	<div id="page">									<!-- "page" div WRAPPING ALL CONTENT -->
-	<header>										<!-- MAIN PAGE HEADER -->
-	
-	
-
-<!-- MAIN LOGO -->  
-<a href="PROJECT1.html" id="headerleftlink"><img id="headerlefticon" src="IMAGES/Header.Left.Icon.Transparent.png" title="Home" alt="Main Website Logo Linking to the CitySipping.com Homepage"></a>
-
-<span id="headertext">A Place for Aspiring <!--<img id="contentimg1" src="IMAGES/Coffee.Transparent.png">--><span id="coffee">Coffee</span> Connoisseurs & <!--<img id="contentimg2" src="IMAGES/Beer.Transparent.png">--><span id="beer">Beer</span> Buffs...</span>
-
-	</header>
-
-	<!-- MAIN NAVIGATION -->
-	<nav>   							
-		
-		<ul>
-  <li><a class="active" href="PROJECT1.html"><button class="navbutton" id="navhome">Home</button></a></li>
-  <li><a href="PROJECT1.NEWS.html"><button class="navbutton" id="navnews">News</button></a></li>
-  <li><a href="PROJECT1.CONTACT.html"><button class="navbutton" id="navcontact">Contact</button></a></li>
-  <li><!-- Use a button to open the snackbar -->
-<button class="navbutton" id="navabout" onclick="myFunction()">About</button>
-
-<!-- The actual snackbar -->
-<div id="snackbar">Welcome Coffee & Beer Enthusiasts, CitySipping.com Features Local Coffee Shops and Craft Beer Joints!</div></li>
-		</ul>
-		</nav>
-	
-	<div id="content">
-	<div id="SearchDiv">
-		<form>              						 
-  <input id="Searchinput" type="text" name="search" placeholder="Search...">
-	</form>
-	</div>
-	
-	<br> <br> <br>
-	
-	
-	<figure id="shufflefigure">
-		<h1 id="HomeH1">PICK A CITY</h1>
-		<!--<a href="PROJECT1.html">--><button id="shufflebutton" alt="Shuffle Button to Mix up the Order of Cities Contained on the CitySipping.com Homepage" title="Shuffle Order of Displayed Cities"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span><!--<div class="buttonimage"></div>-->Shuffle Cities&nbsp;<img class="citybuttonpic" src="IMAGES/shuffle.arrows.png"></span></button><!--</a>-->
-		<button alt="Randomize Button which will Randomly Open One of the City Pages Featured Here" title="Open Random City Page in New Tab" id="shufflebutton2" onclick="randomcity();"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>Random City&nbsp;<img class="citybuttonpic" src="IMAGES/randomize.arrows.png"></span></button>
-		
-		</figure>
-
-	
-	
-	<div id="Cities">   <!-- CITY IMAGES AND BUTTONS LINKING TO INDIVIDUAL PAGES -->
-	
-		<div class="cityfigure">
-		<figure>
-		<a class="citylink" href="PROJECT1.nyc.html"><img class="citypic" src="IMAGES/City.Bridge.Photos/Brooklyn.Bridge.Cartoon.jpg" width="175" height="175" title="New York City" alt="A digitally rendered color sketch of the Brooklyn Bridge, meant to represent New York City"></a>
-		<p>
-			<figcaption>
-			<a href="PROJECT1.nyc.html"><button class="button"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span><!--<div class="buttonimage"></div>-->New York City</span></button></a>
-			</figcaption>
-		</p>
-		</figure>
-		</div>
-		<div class="cityfigure">
-		<figure>
-		<a class="citylink" href="https://en.wikipedia.org/wiki/San_Francisco"> <img class="citypic" src="IMAGES/City.Bridge.Photos/Golden.Gate.Bridge.Cartoon.jpg" width="175" height="175" title="San Francisco" alt="A digitally rendered color sketch of the Golden Gate Bridge, meant to represent the city of San Francisco"></a>
-		<p>
-			<figcaption>
-			<a href=""><button class="button"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>San Francisco</span></button></a>
-			</figcaption>
-		</p>
-		
-		</figure>
-		</div>
-		<div class="cityfigure">
-		<figure>		
-		<a class="citylink" href="https://en.wikipedia.org/wiki/Boston"> <img class="citypic" src="IMAGES/City.Bridge.Photos/Leonard.P.Zakim.Bunker.Hill.Bridge.Cartoon.jpg" width="175" height="175" title="Boston" alt="A digitally rendered color sketch of the Leonard P. Zakim Bunker Hill Bridge, meant to represent the city of Boston"></a>
-		
-		<p><figcaption>
-		<a href=""><button class="button"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>Boston</span></button></a>
-		</figcaption></p>
-		
-		</figure>
-		</div>
-		<div class="cityfigure">
-		<figure>
-		<a class="citylink" href="https://en.wikipedia.org/wiki/Seattle"> <img class="citypic" src="IMAGES/City.Bridge.Photos/Seattle.Bridge.Cartoon.jpg" width="175" height="175" title="Seattle" alt="A digitally rendered color sketch of the Fremont Bridge, meant to represent the city of Seattle"></a>
-			
-			<p><figcaption>
-			<a href=""><button class="button"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>Seattle</span></button></a>
-			</figcaption></p>
-			
-		</figure>
-		</div>
-		<div class="cityfigure">
-		<figure>
-		<a class="citylink" href="https://en.wikipedia.org/wiki/Philadelphia"> <img class="citypic" src="IMAGES/City.Bridge.Photos/Ben.Franklin.Bridge.Cartoon.jpg" width="175" height="175" title="Philadelphia" alt="A digitally rendered color sketch of the Benjamin Franklin Bridge, meant to represent the city of Philadelphia"></a>
-			
-			<p><figcaption>
-			<a href=""><button class="button"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>Philadelphia</span></button></a>
-			</figcaption></p>
-			
-		</figure>
-		</div>
-		<div class="cityfigure">
-		<figure>
-		<a class="citylink" href="https://en.wikipedia.org/wiki/Los_Angeles"> <img class="citypic" src="IMAGES/City.Bridge.Photos/Vincent.Thomas.Bridge.Sketch.jpg" width="175" height="175" title="Los Angeles" alt="A digitally rendered color sketch of the Vincent Thomas Bridge, meant to represent the city of Los Angeles"></a>
-		
-		<p><figcaption>
-		<a href=""><button class="button"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>Los Angeles</span></button></a>
-		</figcaption></p>
-		</figure>
-		</div>
-		<div class="cityfigure">
-		<figure>
-		<a class="citylink" href="https://en.wikipedia.org/wiki/Chicago"> <!--target="_blank"--><img class="citypic" src="IMAGES/City.Bridge.Photos/Chicago.Loop.Bridges.Cartoon.jpg" width="175" height="175" title="Chicago" alt="A digitally rendered clor sketch of the movable Loop Bridges, meant to represent the city of Chicago"></a>
-		
-		<p><figcaption>
-		<a href=""><button class="button"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>Chicago</span></button></a>
-		</figcaption></p>
-		</figure>
-		</div>
-		<div class="cityfigure">
-		<figure>
-		<a class="citylink" href="https://en.wikipedia.org/wiki/Washington,_D.C."> <img class="citypic" src="IMAGES/City.Bridge.Photos/Arlington.Memorial.Bridge.Cartoon.jpg" width="175" height="175" title="Washington, D.C." alt="A digitally rendered color sketch of the Arlington Memorial Bridge, meant to represent Washington, D.C."></a>
-		
-		<p><figcaption>
-		<a href=""><button class="button"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>Washington, D.C.</span></button></a>
-		</figcaption></p>
-		
-		</figure>	
-		</div>
-		<div class="cityfigure">
-		<figure>
-		<a class="citylink" href="https://en.wikipedia.org/wiki/Portland,_Oregon"> <img class="citypic" src="IMAGES/City.Bridge.Photos/Portland.Bridge.Cartoon.jpg" width="175" height="175" title="Portland" alt="A digitally rendered color sketch of the St. Johns Bridge, meant to represent the city of Portland"></a>
-		
-		<p><figcaption>
-		<a href=""><button class="button"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>Portland</span></button></a>
-		</figcaption></p>
-		
-		</figure>
-		</div>
-		<div class="cityfigure">
-		<figure>
-		<a class="citylink" href="https://en.wikipedia.org/wiki/Miami"> <img class="citypic" src="IMAGES/City.Bridge.Photos/Miami.Bridge.Cartoon.jpg" width="175" height="175" title="Miami" alt="A digitally rendered color sketch of the Port of Miami Bridge, meant to represent the city of Miami"></a>
-		
-		<p><figcaption>
-		<a href=""><button class="button"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>Miami</span></button></a>
-		</figcaption></p>
-		</figure>
-		</div>
-	</div>
-	
-</div>  <!-- "content" div END -->
-
-	<footer>            <!-- WEBPAGE FOOTER & COPYRIGHT -->
-	
-	<div id="SocialMediaWrap">
-	
-	<a href="http://www.facebook.com/citysipping"><img class="socialicon" height="35" width="35" src="IMAGES/Facebook-icon.png" title="Facebook" alt="Link to the CitySipping.com Facebook page"></a>
-	<a href="http://www.instagram.com/citysipping"><img class="socialicon" height="35" width="35" src="IMAGES/Instagram-icon.png" title="Instagram" alt="Link to the CitySipping.com Instagram page"></a>
-	<a href="http://www.twitter.com/citysipping"><img class="socialicon" height="35" width="35" src="IMAGES/Twitter-icon.png" title="Twitter" alt="Link to the CitySipping.com Twitter page"></a>
-	<a href="http://www.google.com"><img class="socialicon" height="35" width="35" src="IMAGES/GooglePlus-icon.png" title ="Google+" alt="Link to the CitySipping.com GooglePlus page"></a>
-	<a href="http://www.linkedin.com"><img class="socialicon" height="35" width="35" src="IMAGES/Linkedin-icon.png" title="Linkedin" alt="Link to the CitySipping.com Linkedin page"></a>
-	<a href="https://www.pinterest.com/citysipping"><img class="socialicon" height="35" width="35" src="IMAGES/Pinterest-icon.png" title="Pinterest" alt="Link to the CitySipping.com Pinterest page"></a>
-	<a href="https://www.flickr.com/photos/145861225@N05/"><img class="socialicon" height="35" width="35" src="IMAGES/Flickr-icon.png" title="Flickr" alt="Link to the CitySipping.com Flickr page"></a>
-	<a href="https://www.youtube.com/channel/UCf4MfZvibPFMuYVafCY3fVQ"><img class="socialicon" height="35" width="35" src="IMAGES/Youtube-icon.png" title="Youtube" alt="Link to the CitySipping.com Youtube page"></a>
-	
-	</div>
-
-	<div id="CopyRightWrap">
-
-	<p> <img width="55" height="20" src="IMAGES/Main-logo.png">All content copyright <span id="copyrightsymbol">&copy;</span> 2016, <span id="footermyname">S. Jonathan Najmi</span><img width="55" height="20" src="IMAGES/Main-logo - Reverse.png"> </p>
-	
-	</div>
-	
-	</footer>
-	
-	
-</div> <!-- "page" div END -->
+<form action="https://formspree.io/citysipping@gmail.com" method="post" enctype="text/plain">
 
 
+
+<figure>
+<h2>Name:</h2>
+<input type="text" name="Your Name" style="font-family:sans-serif;font-size:1.2em;" placeholder="Your Name"><br>
+</figure>
+
+<figure>
+<h2>Email:</h2>
+<input type="text" name="_replyto" style="font-family:sans-serif;font-size:1.2em;" placeholder="Your Email"><br>
+</figure>
+
+<input type="hidden" name="_subject" value="New CitySipping.com Submission!" />
+<input type="text" name="_gotcha" style="display:none" />
+<input type="hidden" name="_format" value="plain" />
+
+<figure>
+<h2>Comment:</h2>
+<textarea name="Your Comment(s) or Question(s)" id="comments" style="font-family:sans-serif;font-size:1.2em;" placeholder="Your Feedback">
+</textarea>
+
+<br>
+
+<!--onclick="myFunction1()"--> <!-- Add onclick below if not using formspree.io or back-end form handling-->
+<input class="ContactFormButton" type="submit" value="Submit" title="Pressing Submit will Initiate Your Default Email Client" alt="Button Which Initiates Your Default Email Client for you to Complete the Process of Sending a Comment or Question to CitySipping.com">
+
+<input class="ContactFormButton" type="reset" value="Reset" title="Reset Form Fields" alt="Button to Reset Form Fields">
+</figure>
+
+
+</form>
   </body>
 
 </html>
