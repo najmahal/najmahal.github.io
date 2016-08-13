@@ -6,11 +6,38 @@
   </head>
   <body>                                           <!-- BODY OF THE WEBPAGE -->
     
-<form action="https://formspree.io/citysipping@gmail.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
+<form action="https://formspree.io/citysipping@gmail.com" method="post" enctype="text/plain">
+
+
+
+<figure>
+<h2>Name:</h2>
+<input type="text" name="Your Name" style="font-family:sans-serif;font-size:1.2em;" placeholder="Your Name"><br>
+</figure>
+
+<figure>
+<h2>Email:</h2>
+<input type="text" name="_replyto" style="font-family:sans-serif;font-size:1.2em;" placeholder="Your Email"><br>
+</figure>
+
+<input type="hidden" name="_subject" value="New CitySipping.com Submission!" />
+<input type="text" name="_gotcha" style="display:none" />
+<input type="hidden" name="_format" value="plain" />
+
+<figure>
+<h2>Comment:</h2>
+<textarea name="Your Comment(s) or Question(s)" id="comments" style="font-family:sans-serif;font-size:1.2em;" placeholder="Your Feedback">
+</textarea>
+
+<br>
+
+<!--onclick="myFunction1()"--> <!-- Add onclick below if not using formspree.io or back-end form handling-->
+<input class="ContactFormButton" type="submit" value="Submit" title="Pressing Submit will Initiate Your Default Email Client" alt="Button Which Initiates Your Default Email Client for you to Complete the Process of Sending a Comment or Question to CitySipping.com">
+
+<input class="ContactFormButton" type="reset" value="Reset" title="Reset Form Fields" alt="Button to Reset Form Fields">
+</figure>
+
+
 </form>
 
   </body>
