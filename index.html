@@ -1,0 +1,393 @@
+<!-- All Content Copyright 2016, #.com -->
+<!DOCTYPE html>
+<html>
+
+  <head> 									<!-- HEAD OF THE WEBPAGE -->
+  
+  <!--WEBPAGE/APP ICONS-->
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+  
+  
+  
+    <title>Test</title>  <!-- WEBPAGE TITLE -->
+	
+	<!-- CSS STYLE SHEET FOR WHOLE WEBPAGE -->
+	<link href="css-styles-home.css" type="text/css" rel="stylesheet"/> 
+	
+	<!-- MOBILE TOUCH EVENT STYLE
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	-->
+	<!-- GOOGLE FONT STYLES -->
+	<link href="https://fonts.googleapis.com/css?family=Philosopher:700" rel="stylesheet">
+	<!-- <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'> -->
+  <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=ABeeZee:regular:latin'>
+
+	<!-- METADATA -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- MOBILE OPTIMIZATION; adapts to viewport being used -->
+	<meta charset="utf-8" />
+	<meta name="description"
+	content="A Community of #" />
+	<meta name="keywords"
+	content="#" />
+	<meta name="robots"
+	content="nofollow" />
+	<meta http-equiv="author"
+	content="#.com" />
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	
+	
+  <!-- JQUERY - GOOGLE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <!-- MOBILE TOUCH EVENTS  
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  -->
+    <!-- BOOTSTRAP 
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
+  
+  
+  <script> <!-- SHUFFLE CITYFIGURES ON RELOAD -->
+  
+  $(document).ready(function(){
+
+          $('div#Cities').each(function(){
+
+                // get current div
+                var $div_parent = $(this);
+
+                // get array of childs in parent div
+                var $divsArr = $div_parent.children('div.cityshuffle');
+
+                // sort array of childs in parent div (#sponsors) randomly
+                $divsArr.sort(function(a,b){
+
+                      // Get a random number between 0 and 10
+                      var temp = parseInt( Math.random()*10 );
+
+                      // Get 1 or 0, whether temp is odd or even
+                      var isOddOrEven = temp%2;
+
+                      // Get +1 or -1, whether temp greater or smaller than 5
+                      var isPosOrNeg = temp>5 ? 1 : -1;
+
+                      // Return -1, 0, or +1
+                      return( isOddOrEven*isPosOrNeg );
+                })
+
+                // append child items to parent
+                .appendTo($div_parent);            
+          });
+    });
+  
+  </script>
+  
+ 
+ <!-- PICK A RANDOM CITY SCRIPT -->
+ <script>
+ 
+ // the used links
+var links = [
+    "PROJECT1.NYC.html",
+    "PROJECT1.NYC.html",
+    "PROJECT1.NYC.html",
+    "PROJECT1.NYC.html"];
+
+randomcity = function () {
+    // get a random number between 0 and the number of links
+    var randIdx = Math.random() * links.length;
+    // round it, so it can be used as array index
+    randIdx = parseInt(randIdx, 10);
+    // construct the link to be opened
+    var link = '#' + links[randIdx];
+    // open it in a new window / tab (depends on browser setting)
+    window.open(link);
+};
+ 
+ </script>
+ 
+ 
+	<!-- SHUFFLE CITYFIGURES -->
+ <script>
+ 
+ $(function() {
+
+  $('#shufflebutton').click(function() {
+    $("div#Cities").randomize("div.cityshuffle");
+  });
+
+});
+
+(function($) {
+
+$.fn.randomize = function(childElem) {
+  return this.each(function() {
+      var $this = $(this);
+      var elems = $this.children(childElem);
+
+      elems.sort(function() { return (Math.round(Math.random())-0.5); });  
+
+      $this.remove(childElem);  
+
+      for(var i=0; i < elems.length; i++)
+        $this.append(elems[i]);      
+
+  });    
+}
+})(jQuery);
+ 
+ 
+ </script>
+ 
+ <!-- DRAG & DROP / REARRANGE DIVS -->
+ <script>
+  $( function() {
+    $( "#Cities" ).sortable();
+    $( "#Cities" ).disableSelection();
+  } );
+  </script>
+ 
+ <!-- HAMBURGER ICON -->
+ <script>
+ 
+ function myFunction(x) {
+    x.classList.toggle("change");
+}
+ 
+ </script>
+
+ 
+ 
+ <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+ 
+ 
+
+  </head>
+  <body>                                           <!-- BODY OF THE WEBPAGE -->
+   
+	<div id="page">									<!-- "page" div WRAPPING ALL CONTENT -->
+	<span onclick="closeNav()"> <!-- Begin Span SideNav Close -->
+	<header>										<!-- MAIN PAGE HEADER -->
+	
+	
+
+<!-- MAIN LOGO -->  
+
+
+<a href="PROJECT1.html" id="headerleftlink"><div id="headerlefticon" title="Home" alt="Main Logo Linking to the Homepage"></div></a>
+
+<span id="headertext">The <span id="coffee">#</span> & <span id="beer">#</span> Community<i>!</i></span>
+
+<!-- HEADER Background image license info. -- CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. -->
+
+	</header>
+	
+</span> <!-- End SideNav Close -->
+
+	<!-- MAIN NAVIGATION -->
+	<nav>   							
+		
+		<ul id="NavListID" class="NavListClass">
+  <li><a href="PROJECT1.html"><button class="navbutton" id="navhome" title="Home">Home</button></a></li>
+  <li><a href="PROJECT1.NEWS.html"><button class="navbutton" id="navnews" title="News">News</button></a></li>
+  <li><a href="PROJECT1.EVENTS.html"><button class="navbutton" id="navevents" title="Events">Events</button></a></li>
+  <li>
+  
+  <div class="dropdown">
+  <button class="navbutton" id="navcontact" title="Contact">Contact</button>
+  <div id="myDropdown" class="dropdown-content">
+  
+
+   <a href="PROJECT1.EMAIL.html" title="Email">Email</a>
+    <a href="PROJECT1.SUGGEST.html" title="Suggest">Suggest</a>
+	<a href="PROJECT1.SUBSCRIBE.html" title="Sign-up">Sign-up</a>
+	
+  </div>
+ </div>
+  
+  </li>
+  <li>
+<a href="PROJECT1.ABOUT.html"><button class="navbutton" id="navabout" title="About">About</button></a></li>
+ 
+  <li id="hamburger">
+  <span onclick="openNav()">
+  <div id="hamburgercontainer" class="container" title="Menu" onclick="myFunction(this)">
+ 
+ <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+</span>
+
+  &nbsp;
+  
+  </li>
+
+		</ul>
+		
+		
+		
+		<div id="mySidenav" class="sidenav">
+	
+	
+  <a id="sideX" href="javascript:void(0)" title="Close" class="closebtn" onclick="closeNav()">&times;</a>
+	
+	
+ <hr>
+
+	
+ 
+ <a id="sidehome" href="PROJECT1.html">Home</a>
+
+  <a id="sidenews" href="PROJECT1.NEWS.html">News</a>
+ 
+  <a id="sideevents" href="PROJECT1.EVENTS.html">Events</a>
+ 
+  <a id="sidecontact" href="#">Contact</a>
+
+  <a id="sideabout" href="PROJECT1.ABOUT.html">About</a>
+
+  
+ </div>
+ 
+</div>
+
+<script>
+/* Set the width of the side navigation to 66% of viewport */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "66%";
+//if ($(window).width() < 341) {
+//   document.getElementById("mySidenav").style.width = "50%";
+// } 
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+	
+}
+
+// $("selector").on("swipeleft",function(event){...})
+</script>
+
+
+		</nav>
+		
+	<span onclick="closeNav()">
+	
+  <div id="GoogleSearch">
+  <script>
+  (function() {
+    var cx = '016581460122562567174:gikx2qf5274';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+
+
+
+<br>
+	
+	<div id="content">
+	
+	
+	
+	<div id="buttonwrap">
+	<button id="shufflebutton" alt="Shuffle Button to Mix up the Order of Cities Contained on the Homepage" title="Why Not!?"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>Shuffle&nbsp;<img class="citybuttonpic" src="IMAGES/shuffle.arrows.png"></span></button>
+		
+		
+		
+		<button alt="Randomize Button which will Randomly Open One of the City Pages Featured Here" title="Random City" id="shufflebutton2" onclick="randomcity();"><img class="citybuttonpic" src="Untitled.png">&nbsp;<span>Random&nbsp;<img class="citybuttonpic" src="IMAGES/randomize.arrows.png"></span></button>
+		</div>
+		
+
+	
+	<div id="Cities">   <!-- CITY IMAGE BUTTONS LINKING TO CITY PAGES -->
+	<!-- #Cities Background image license info. -- CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. -->
+	
+	<!--NYC-->
+		<div class="cityshuffle"><a href="PROJECT1.nyc.html"><div class="cityfigure" id="ButtonNYC" title="New York City" alt="A digitally rendered color sketch of the Brooklyn Bridge, meant to represent New York City"></div></a></div>
+		
+	<!--San Francisco-->	
+		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/San_Francisco"><div class="cityfigure" id="ButtonSanFran" title="San Francisco" alt="A digitally rendered color sketch of the Golden Gate Bridge, meant to represent the city of San Francisco"></div></a></div>
+		
+	<!--Boston-->
+		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Boston"><div class="cityfigure" id="ButtonBoston" title="Boston" alt="A digitally rendered color sketch of the Leonard P. Zakim Bunker Hill Bridge, meant to represent the city of Boston"></div></a></div>
+		
+	<!--Seattle-->
+		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Seattle"><div class="cityfigure" id="ButtonSeattle" title="Seattle" alt="A digitally rendered color sketch of the Fremont Bridge, meant to represent the city of Seattle"></div></a></div>
+		
+	<!--Philly-->
+		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Philadelphia"><div class="cityfigure" id="ButtonPhilly" title="Philadelphia" alt="A digitally rendered color sketch of the Benjamin Franklin Bridge, meant to represent the city of Philadelphia"></div></a></div>
+		
+	<!--Los Angeles-->
+		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Los_Angeles"><div class="cityfigure" id="ButtonLosAngeles" title="Los Angeles" alt="A digitally rendered color sketch of the Vincent Thomas Bridge, meant to represent the city of Los Angeles"></div></a></div>
+		
+	<!--Chicago-->
+		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Chicago"><div class="cityfigure" id="ButtonChicago" title="Chicago" alt="A digitally rendered clor sketch of the movable Loop Bridges, meant to represent the city of Chicago"></div></a></div>
+		
+	<!--Washington, DC-->
+		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Washington,_D.C."><div class="cityfigure" id="ButtonWashDC" title="Washington, D.C." alt="A digitally rendered color sketch of the Arlington Memorial Bridge, meant to represent Washington, D.C."></div></a></div>		
+		
+	<!--Portland-->
+		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Portland,_Oregon"><div class="cityfigure" id="ButtonPortland" title="Portland" alt="A digitally rendered color sketch of the St. Johns Bridge, meant to represent the city of Portland"></div></a></div>
+		
+	<!--Miami-->
+		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Miami"><div class="cityfigure" id="ButtonMiami" title="Miami" alt="A digitally rendered color sketch of the Port of Miami Bridge, meant to represent the city of Miami"></div></a></div>
+	</div>
+
+	
+</div>  <!-- "content" div END -->
+
+	<footer>            <!-- WEBPAGE FOOTER & COPYRIGHT -->
+	<figure id="SocialCopyFigure">
+	<div id="SocialMediaWrap">
+	
+	<a href="#" title="Facebook" alt="Link to the Facebook page"><div id="socialfacebook" class="socialcircle"></div></a>
+	<a href="#" title="Instagram" alt="Link to the Instagram page"><div id="socialinstagram" class="socialcircle"></div></a>
+	<a href="#" title="Twitter" alt="Link to the Twitter page"><div id="socialtwitter" class="socialcircle"></div></a>
+	<a href="#" title ="Google+" alt="Link to the GooglePlus page"><div id="socialgoogleplus" class="socialcircle"></div></a>
+	<a href="#" title="Linkedin" alt="Link to the Linkedin page"><div id="sociallinkedin" class="socialcircle"></div></a>
+	<a href="#" title="Pinterest" alt="Link to the Pinterest page"><div id="socialpinterest" class="socialcircle"></div></a>
+	<a href="#" title="Flickr" alt="Link to the Flickr page"><div id="socialflickr" class="socialcircle"></div></a>
+	<a href="#" title="Youtube" alt="Link to the Youtube page"><div id="socialyoutube" class="socialcircle"></div></a>
+	
+	</div>
+
+	
+	
+	<div id="CopyRightWrap">
+
+	<p>All content copyright <span id="copyrightsymbol">&copy;</span> 2016, <span id="footermyname">#.com</span></p>
+	</div>
+	</figure>
+	</footer>
+	
+	</span>
+</div> <!-- "page" div END -->
+
+
+  </body>
+
+</html>
