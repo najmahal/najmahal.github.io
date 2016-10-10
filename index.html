@@ -227,7 +227,7 @@ document.getElementById("GoogleSearch").style.display = 'none';
 	<nav>							
 		
 		<ul id="NavListID" class="NavListClass">
-  <li><a href="PROJECT1.html"><button class="navbutton" id="navhome" title="Home">Home</button></a></li>
+  <li id="LiHome"> <a href="PROJECT1.html"><button class="navbutton" id="navhome" title="Home">Home</button></a></li>
   <li><a href="PROJECT1.NEWS.html"><button class="navbutton" id="navnews" title="News">News</button></a></li>
   <li><a href="PROJECT1.EVENTS.html"><button class="navbutton" id="navevents" title="Events">Events</button></a></li>
   <li>
@@ -250,15 +250,24 @@ document.getElementById("GoogleSearch").style.display = 'none';
  
   <li id="hamburger">
   <span onclick="openNav()">
+  <i id="MenuIcon" class="material-icons" title="Menu">menu</i><span id="MenuIconText" onclick="openNav()">Menu</span>
+  <!--
   <div id="hamburgercontainer" class="container" title="Menu" onclick="myFunction(this)">
  
  <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
 </div>
-</span>
 
-  &nbsp;
+-->
+</span>
+ 
+  </li>
+  
+  <li id="listsearch">
+  
+  <i id="SearchIcon" class="material-icons" onclick="closeNav()" title="Search">search</i>
+	<i id="CloseIcon" class="material-icons" title="Close" onclick="closeNav()">close</i>
   
   </li>
 
@@ -318,7 +327,7 @@ function closeNav() {
 	//document.getElementById("headertext").style.backgroundColor = "rgba(0,0,0,0)";
 	//$("#SearchIcon").show();
 	
-//	$("#NavListID").show();
+  //$("#NavListID").show();
 }
 
 
@@ -328,8 +337,7 @@ function closeNav() {
 
 		</nav>
 		
-	<i id="SearchIcon" class="material-icons" onclick="closeNav()" title="Search">search</i>
-	<i id="CloseIcon" class="material-icons" title="Close" onclick="closeNav()">close</i>
+	
 	
   <div id="GoogleSearch" onclick="closeNav()">
   
