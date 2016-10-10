@@ -1,69 +1,146 @@
+<!-- All Content Copyright 2016, CitySipping.com. All Rights Reserved. -->
 <!DOCTYPE html>
-	<html>
-	<head>
-		
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		
-		#newswrapper {
+<html>
+  <head> 									<!-- HEAD OF THE WEBPAGE -->
+  
+  <!--WEBPAGE/APP ICONS-->
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+  
+  
+    <title>CitySipping.com - The Coffee-n-Beer Community</title>  <!-- WEBPAGE TITLE -->
 	
-	background-image: url("sayagata-400px.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
-margin: 0 auto;
+	<!-- CSS STYLE SHEET FOR WHOLE WEBPAGE -->
+	<link href="css-styles-home.css" type="text/css" rel="stylesheet"/>
+	<!-- BOOTSTRAP STYLE 
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	
-	float: left;
-	max-width: 100%;
-	height: auto;
-	border-radius: 10px;
-	padding: 10px;
-	border: 2px solid rgba(77, 77, 77, 1.0);
-}
-
-	.rsswrap {
-	 background-image: url("Header.Background.Image.Transparent.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
-	display: inline-block;
-	width: 275px;
-	height: auto;
-	margin: 5px;
-	border: 2px solid #4d4d4d;
-	padding: 15px;
-	border-radius: 10px;
+	 JQUERY UI STYLE 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">	
 	
-}
-@media screen and (max-width: 680px) {
+	-->
 	
-	.rsswrap {
-		
-		width: 275px;
-		
-	}
+	<!-- GOOGLE FONT STYLE -->
+	<link href="https://fonts.googleapis.com/css?family=Philosopher:700" rel="stylesheet">
+<!-- <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=ABeeZee:regular:latin'> -->
+<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Grand+Hotel' rel='stylesheet' type='text/css'>
+	<!-- METADATA -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- MOBILE OPTIMIZATION; adapts to viewport being used -->
+	<meta charset="utf-8" />
+	<meta name="description"
+	content="A place for aspiring coffee connoisseurs and beer buffs, featuring local coffee shops and craft beer joints" />
+	<meta name="keywords"
+	content="coffee, beer, New York City, San Francisco, Boston, Seattle, Philadelphia, Los Angeles, Chicago, Washington, D.C., Portland, Miami" />
+	<meta name="robots"
+	content="nofollow" />
+	<meta http-equiv="author"
+	content="S.J.N." />
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
 	
-}
-
-.rsswrap:hover{
-    cursor: move;
-    cursor: -webkit-grab;
-    cursor: grab;
-}
-.rsswrap:active { 
-    cursor: grabbing; 
-    cursor: -webkit-grabbing;
-}
-	
-	</style>	
-		<!-- JQUERY - GOOGLE -->
+ <!-- JQUERY - GOOGLE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <!-- BOOTSTRAP -->
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		 <!-- DRAG & DROP / REARRANGE DIVS -->
+  
+ 
+ <!-- DRAG & DROP / REARRANGE DIVS -->
  <script>
   $( function() {
     $( "#newswrapper" ).sortable();
     $( "#newswrapper" ).disableSelection();
   } );
   </script>
-	</head>
-	<body>
+  <!-- HAMBURGER ICON -->
+ <script>
+ 
+ function myFunction(x) {
+    x.classList.toggle("change");
+}
+ 
+ </script>
+ 
+  </head>
+  <body>                                           <!-- BODY OF THE WEBPAGE -->
+    
+	<div id="page">									<!-- "page" div WRAPPING ALL CONTENT -->
+	<header>									<!-- MAIN PAGE HEADER -->
+	
+	
+
+<!-- MAIN LOGO -->  
+
+
+<a href="PROJECT1.html" id="headerleftlink"><div id="headerlefticon" title="CitySipping Home" alt="Main CitySipping.com Logo Linking to the Homepage"></div></a>
+<span id="headertext">The <span id="coffee">Coffee</span> & <span id="beer">Beer</span> Community<i>!</i></span>
+
+<!-- HEADER Background image license info. -- CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. -->
+
+	</header>
+
+	
+	<!-- MAIN NAVIGATION -->
+		<nav>   							
+		
+		<ul>
+  <li><a class="active" href="PROJECT1.html"><button class="navbutton" id="navhome" title="Home">Home</button></a></li>
+  <li><a href="PROJECT1.NEWS.html"><button class="navbutton" id="navnews" title="News">News</button></a></li>
+  
+  <li>
+  
+  <div class="dropdown">
+  <button class="navbutton" id="navcontact" title="Contact">Contact</button>
+  <div id="myDropdown" class="dropdown-content">
+  
+
+   <a href="PROJECT1.EMAIL.html" title="Email">Email</a>
+    <a href="PROJECT1.SUGGEST.html" title="Suggest">Suggest</a>
+		<a href="PROJECT1.SUBSCRIBE.html" title="Sign-up">Sign-up</a>
+
+  </div>
+ </div>
+  
+  </li>
+  <li>
+<a href="PROJECT1.ABOUT.html"><button class="navbutton" id="navabout" title="About">About</button></a></li>
+  <li id="hamburger">
+  <div class="container" title="Menu" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>&nbsp;
+  
+  </li>
+		</ul>
+		</nav>
+	 <div id="GoogleSearch">
+  <script>
+  (function() {
+    var cx = '016581460122562567174:gikx2qf5274';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+</div>
+<br>
 	<div id="content">
 	
 	
@@ -244,18 +321,58 @@ margin: 0 auto;
 	<a href="http://feeds.feedburner.com/EuropeanCraftBeerAle-GoogleNews" rel="alternate" type="application/rss+xml"><img src="http://feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/EuropeanCraftBeerAle-GoogleNews" rel="alternate" type="application/rss+xml">Subscribe in a reader</a>
 	</div>
 	
-	<div class="rsswrap">
+	
+	
+		
+		
+		<div class="rsswrap">
 
 	<!-- start feedwind code --><script type="text/javascript">document.write('\x3Cscript type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js">\x3C/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://news.google.com/news?hl=en&ned=us&q=Coffee+culture&ie=UTF-8&output=rss",rssmikle_frame_width: "300",rssmikle_frame_height: "400",frame_height_by_article: "0",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "16",rssmikle_border: "off",responsive: "on",rssmikle_css_url: "",text_align: "left",text_align2: "left",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "On",rssmikle_title: "on",rssmikle_title_sentence: "Coffee Culture News",rssmikle_title_link: "http://www.rssmix.com/u/8206517/rss.xml",rssmikle_title_bgcolor: "#339966",rssmikle_title_color: "#FFFAFA",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#00B3B3",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "on",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#000000",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M %p",item_description_style: "text+tn",item_thumbnail: "full",item_thumbnail_selection: "auto",article_num: "10",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:12px; text-align:center; width:300px;"><a href="http://feed.mikle.com/" target="_blank" style="color:#000000;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.--></div><!--  end  feedwind code -->
 	<a href="http://feeds.feedburner.com/CoffeeCulture-GoogleNews" rel="alternate" type="application/rss+xml"><img src="http://feedburner.google.com/fb/images/pub/feed-icon16x16.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/CoffeeCulture-GoogleNews" rel="alternate" type="application/rss+xml">Subscribe in a reader</a>
 	</div>
 
 		</div>
-		
-		
 
-
+</div>
 	
 </div>  <!-- "content" div END -->
-	</body>
-	</html>
+
+	<footer>            <!-- WEBPAGE FOOTER & COPYRIGHT -->
+	
+	
+	
+	<figure id="SocialCopyFigure">
+	<div id="SocialMediaWrap">
+	
+	<a href="http://www.facebook.com/citysipping" title="Facebook" alt="Link to the CitySipping.com Facebook page"><div id="socialfacebook" class="socialcircle"></div></a>
+	<a href="http://www.instagram.com/citysipping" title="Instagram" alt="Link to the CitySipping.com Instagram page"><div id="socialinstagram" class="socialcircle"></div></a>
+	<a href="http://www.twitter.com/citysipping" title="Twitter" alt="Link to the CitySipping.com Twitter page"><div id="socialtwitter" class="socialcircle"></div></a>
+	<a href="http://www.google.com" title ="Google+" alt="Link to the CitySipping.com GooglePlus page"><div id="socialgoogleplus" class="socialcircle"></div></a>
+	<a href="http://www.linkedin.com" title="Linkedin" alt="Link to the CitySipping.com Linkedin page"><div id="sociallinkedin" class="socialcircle"></div></a>
+	<a href="https://www.pinterest.com/citysipping" title="Pinterest" alt="Link to the CitySipping.com Pinterest page"><div id="socialpinterest" class="socialcircle"></div></a>
+	<a href="https://www.flickr.com/photos/145861225@N05/" title="Flickr" alt="Link to the CitySipping.com Flickr page"><div id="socialflickr" class="socialcircle"></div></a>
+	<a href="https://www.youtube.com/channel/UCf4MfZvibPFMuYVafCY3fVQ" title="Youtube" alt="Link to the CitySipping.com Youtube page"><div id="socialyoutube" class="socialcircle"></div></a>
+	
+	</div>
+
+	
+	
+	<div id="CopyRightWrap">
+
+	<p>All content copyright <span id="copyrightsymbol">&copy;</span> 2016, <span id="footermyname">CitySipping.com</span></p>
+	</div>
+	
+	
+	
+	</figure>
+	</footer>
+	
+	
+</div> <!-- "page" div END -->
+
+
+
+
+  </body>
+
+</html>
