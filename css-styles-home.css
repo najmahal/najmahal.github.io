@@ -1,0 +1,2536 @@
+/* All Content Copyright 2016, Sasan Jonathan Najmi */
+
+
+html, body {height: 100%;}
+
+
+
+body {
+	
+	
+	background-color: white;
+}
+	
+#page {
+	background-color: white;
+	width: 100%;
+	height: auto;
+}
+ 
+#content { 
+padding: 5px;                         /* padding-bottom adjustment down from 180 to 100px got rid of horizontal scrollbar */
+margin: 5px;
+min-height: 100%;
+max-width: 100%;	
+border-radius: 10px;
+ 
+/* background-image: url("IMAGES/sayagata-400px.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
+	
+	}	
+	
+#Cities {
+display: inline-block;
+max-width: 100%;
+height: auto;
+/* background-image: url("IMAGES/sayagata-400px.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
+
+border-radius: 10px;
+	
+	padding: 10px;
+	
+	border: 2px solid rgba(77, 77, 77, 1.0);
+margin: 5px auto;
+}
+
+figure {
+
+text-align: center;
+
+float: left;
+
+}
+
+header {
+	/* background-image: url("IMAGES/Background.Image.Blue.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
+background-color: #0be2e2/*#0be2bb#33e8e8#0be2a9*/;
+
+  border-radius: 10px;
+
+	margin: 1px;
+	max-width: 100%;
+	min-height: 128px;
+	background-size: contain;
+	
+	}		
+	
+
+	@media screen and (max-width:680px) {
+		
+		
+		header {
+			
+			min-height: 115px;
+			
+		}
+		
+	}
+	@media screen and (max-width:600px) {
+		
+		
+		header {
+			
+			min-height: 104px;
+			
+		}
+		
+	}
+	@media screen and (max-width:520px) {
+		
+		
+		header {
+			
+			min-height: 94px;
+			
+		}
+		
+	}
+	@media screen and (max-width:440px) {
+		
+		
+		header {
+			
+			min-height: 85px;
+			
+		}
+		
+	}
+	@media screen and (max-width:360px) {
+		
+		
+		header {
+			
+			min-height: 77px;
+			
+		}
+		
+	}
+	@media screen and (max-width:280px) {
+		
+		
+		header {
+			
+			min-height: 69px;
+			
+		}
+		
+	}
+#headerlefticon {
+	display: inline-block;
+	background-size: 183px 128px;
+    background-repeat: no-repeat;
+	background-image: url("IMAGES/Main.Logo.Home.png");
+	min-width: 183px;
+	min-height: 128px;
+	vertical-align: middle;
+	border-radius: 10px;
+	
+	
+}
+
+@media screen and (max-width:680px) {
+	
+	#headerlefticon {
+		background-image: url("IMAGES/Main.Logo.Home.png");
+		display: inline-block;
+	background-size: 165px 115px;
+    background-repeat: no-repeat;
+		min-width: 165px;
+		min-height: 115px;
+		vertical-align: middle;
+		border-radius: 10px;
+		
+		
+		
+	}
+	
+}
+
+@media screen and (max-width:600px) {
+	
+	#headerlefticon {
+		background-image: url("IMAGES/Main.Logo.Home.png");
+		display: inline-block;
+	background-size: 149px 104px;
+    background-repeat: no-repeat;
+		min-width: 149px;
+		min-height: 104px;
+		vertical-align: middle;
+		border-radius: 10px;
+	}
+	
+}
+@media screen and (max-width:520px) {
+	
+	#headerlefticon {
+		background-image: url("IMAGES/Main.Logo.Home.png");
+		display: inline-block;
+	background-size: 134px 94px;
+    background-repeat: no-repeat;
+		min-width: 134px;
+		min-height: 94px;
+		vertical-align: middle;
+		border-radius: 10px;
+	}
+	
+}
+@media screen and (max-width:440px) {
+	
+	#headerlefticon {
+		background-image: url("IMAGES/Main.Logo.Home.png");
+		display: inline-block;
+	background-size: 121px 85px;
+    background-repeat: no-repeat;
+		min-width: 121px;
+		min-height: 85px;
+		vertical-align: middle;
+		border-radius: 10px;
+	}
+	
+}
+@media screen and (max-width:360px) {
+	
+	#headerlefticon {
+		background-image: url("IMAGES/Main.Logo.Home.png");
+		display: inline-block;
+	background-size: 109px 77px;
+    background-repeat: no-repeat;
+		min-width: 109px;
+		min-height: 77px;
+		vertical-align: middle;
+		border-radius: 10px;
+	}
+	
+}
+@media screen and (max-width:280px) {
+	
+	#headerlefticon {
+		background-image: url("IMAGES/Main.Logo.Home.png");
+		display: inline-block;
+	background-size: 98px 69px;
+    background-repeat: no-repeat;
+		min-width: 98px;
+		min-height: 69px;
+		vertical-align: middle;
+		border-radius: 10px;
+	}
+	
+}
+
+#headertext {
+	
+	vertical-align: middle;
+display: inline-block;
+
+font-size: 50px;
+
+text-align: center;
+
+/*font-family: 'Philosopher', sans-serif;*/
+font-family: 'Grand Hotel', cursive;
+ 
+  color: 	#FFFAFA;
+ 
+  text-shadow: 1px 1px black;
+ 
+}
+
+@media screen and (max-width:680px) {
+	
+	#headertext {
+		
+		font-size: 45px;
+	}
+	
+}
+
+@media screen and (max-width:640px) {
+	
+	#headertext {
+		
+		font-size: 43px;
+	}
+	
+}
+
+@media screen and (max-width:600px) {
+	
+	#headertext {
+		
+		font-size: 40px;
+	}
+	
+}
+@media screen and (max-width:560px) {
+	
+	#headertext {
+		
+		font-size: 37px;
+	}
+	
+}
+@media screen and (max-width:520px) {
+	
+	#headertext {
+		
+		font-size: 35px;
+	}
+	
+}
+@media screen and (max-width:480px) {
+	
+	#headertext {
+		
+		font-size: 32px;
+	}
+	
+}
+@media screen and (max-width:440px) {
+	
+	#headertext {
+		
+		font-size: 30px;
+	}
+	
+}
+@media screen and (max-width:400px) {
+	
+	#headertext {
+		
+		font-size: 27px;
+	}
+	
+}
+
+@media screen and (max-width:360px) {
+	
+	#headertext {
+		
+		font-size: 25px;
+	}
+	
+}
+@media screen and (max-width:320px) {
+	
+	#headertext {
+		
+		font-size: 22px;
+	}
+	
+}
+
+@media screen and (max-width:280px) {
+	
+	#headertext {
+		
+		font-size: 20px;
+	}
+	
+}
+
+#coffee {
+	color: #B97A57;
+	font-family: 'Grand Hotel', cursive;
+	font-size: 40px;
+	text-shadow: 1px 2px black;
+	
+}
+
+@media screen and (max-width:680px) {
+	
+	#coffee {
+		
+		font-size: 30px;
+		
+	}
+}
+
+#beer {
+	
+	
+	color: #FFC90E;
+	font-family: 'Grand Hotel', cursive;
+	font-size: 40px;
+	text-shadow: 1px 2px black;
+	
+}
+
+@media screen and (max-width:680px) {
+	
+	#beer {
+		
+		font-size: 30px;
+		
+	}
+	
+}
+
+.invisiblelink {
+	
+	display: block;
+    left: 30px; top: 0px;
+    position: absolute;
+    height: 150px; width: 180px;
+	overflow: visible;
+	
+}
+
+sub {
+	
+	font-size: 15px;
+	
+}
+	
+#titlelink {
+	
+	text-decoration: none;
+	
+}
+
+#SocialMediaWrap {
+	
+	margin: auto;
+	
+	max-width: 400px;
+	height: auto;
+	
+	background-color: white;
+}
+
+#CopyRightWrap {
+	
+	float: left;
+	
+	background-color: white;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 20px;
+}
+@media screen and (max-width:680px) {
+	
+	#CopyRightWrap {
+		
+		font-size: 19px;
+		
+	}
+	
+}
+@media screen and (max-width:640px) {
+	
+	#CopyRightWrap {
+		
+		font-size: 18px;
+		
+	}
+	
+}
+@media screen and (max-width:600px) {
+	
+	#CopyRightWrap {
+		
+		font-size: 17px;
+		
+	}
+	
+}
+@media screen and (max-width:560px) {
+	
+	#CopyRightWrap {
+		
+		font-size: 16px;
+		
+	}
+	
+}
+@media screen and (max-width:520px) {
+	
+	#CopyRightWrap {
+		
+		font-size: 15px;
+		
+	}
+	
+}
+@media screen and (max-width:480px) {
+	
+	#CopyRightWrap {
+		
+		font-size: 14px;
+		
+	}
+	
+}
+@media screen and (max-width:440px) {
+	
+	#CopyRightWrap {
+		
+		font-size: 13px;
+		
+	}
+	
+}
+@media screen and (max-width:400px) {
+	
+	#CopyRightWrap {
+		
+		font-size: 12px;
+		
+	}
+	
+}
+@media screen and (max-width:360px) {
+	
+	#CopyRightWrap {
+		
+		font-size: 11px;
+		
+	}
+	
+}
+@media screen and (max-width:320px) {
+	
+	#CopyRightWrap {
+		
+		font-size: 10px;
+		
+	}
+	
+}
+@media screen and (max-width:280px) {
+	
+	#CopyRightWrap {
+		
+		font-size: 9px;
+		
+	}
+	
+}
+#SocialCopyFigure {
+	
+	float: right;
+}
+
+.Copyrightpic {
+	
+	vertical-align: middle;
+	
+}
+
+footer {
+	/* background-image: url("IMAGES/Header.Background.Image.Transparent.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
+	margin: 3px;
+	max-width: 100%;
+	max-height: 100px;
+	
+	
+	
+	position: relative;
+	clear:both;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 20px;
+background-color: white;
+border-radius: 10px;
+
+
+	}
+	
+#footermyname {
+	
+	font-family: 'Grand Hotel', cursive;
+	font-size: 24px;
+	
+	
+}
+
+@media screen and (max-width:680px) {
+	
+	#footermyname {
+		
+		font-size: 18px;
+		
+	}
+	
+}
+
+#copyrightsymbol {
+	
+	font-family: Garamond;
+	
+	
+}
+
+.socialicon {
+	
+	border-radius: 15px;
+	box-shadow: 5px 5px 2px #888888;
+	
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+   filter: grayscale(100%); 
+   
+  width: 35px;
+   height: 35px;
+}
+
+.socialicon:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+	transform: translateY(-4px);
+	
+}
+
+.socialicon:active {
+	filter: none;
+      -webkit-filter: grayscale(0);
+transform: translateY(-4px);
+}
+
+@media screen and (max-width:680px) {
+	
+	.socialicon {
+		
+		width: 30px;
+		height: 30px;
+	}
+	
+	
+}
+
+
+#socialfigure {
+	
+	margin: 0 auto;
+	
+}
+					/* SOCIALCIRCLE STYLE FOR *ALL* */
+.socialcircle {
+	border-radius: 100px;
+	 width: 45px;
+   height: 45px;
+   display: inline-block;
+
+   
+   -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(grayscale.svg); /* Firefox 4+ */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  
+  filter: gray; /* IE 6-9 */
+   
+}
+
+.socialcircle:hover {
+	
+	box-shadow: 5px 5px 2px #888888;
+	transform: translateY(-4px);
+}
+
+.socialcircle:active {
+	
+	box-shadow: 5px 5px 2px #888888;
+	transform: translateY(-4px);
+}
+
+@media screen and (max-width:680px) {
+	
+	.socialcircle {
+		
+		
+		width: 41px;
+		height: 41px;
+	}
+	
+}
+@media screen and (max-width:640px) {
+	
+	.socialcircle {
+		
+		
+		width: 39px;
+		height: 39px;
+	}
+	
+}
+@media screen and (max-width:600px) {
+	
+	.socialcircle {
+		
+		
+		width: 37px;
+		height: 37px;
+	}
+	
+}
+@media screen and (max-width:560px) {
+	
+	.socialcircle {
+		
+		
+		width: 35px;
+		height: 35px;
+	}
+	
+}
+@media screen and (max-width:520px) {
+	
+	.socialcircle {
+		
+		
+		width: 33px;
+		height: 33px;
+	}
+	
+}
+@media screen and (max-width:480px) {
+	
+	.socialcircle {
+		
+		
+		width: 31px;
+		height: 31px;
+	}
+	
+}
+@media screen and (max-width:440px) {
+	
+	.socialcircle {
+		
+		
+		width: 29px;
+		height: 29px;
+	}
+	
+}
+@media screen and (max-width:400px) {
+	
+	.socialcircle {
+		
+		
+		width: 27px;
+		height: 27px;
+	}
+	
+}
+@media screen and (max-width:360px) {
+	
+	.socialcircle {
+		
+		
+		width: 25px;
+		height: 25px;
+	}
+	
+}
+@media screen and (max-width:320px) {
+	
+	.socialcircle {
+		
+		
+		width: 23px;
+		height: 23px;
+	}
+	
+}
+@media screen and (max-width:280px) {
+	
+	.socialcircle {
+		
+		
+		width: 21px;
+		height: 21px;
+	}
+	
+}
+
+
+				/* FACEBOOK */
+
+#socialfacebook {
+	/* border: 2px solid #888888; */
+	
+	
+	background-color: #3B5998;
+  
+   background: -webkit-linear-gradient(bottom right, #3B5998, #5a7abf); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #3B5998, #5a7abf); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #3B5998, #5a7abf); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #3B5998, #5a7abf); /* Standard syntax */
+	
+}
+
+
+#socialfacebook:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+	
+	
+}
+
+#socialfacebook:active {
+	filter: none;
+      -webkit-filter: grayscale(0);
+	  
+}
+
+
+
+             /* INSTAGRAM */
+
+#socialinstagram {
+	/* border: 2px solid #888888; */
+	
+	background-color: #e95950;
+	background: -webkit-linear-gradient(bottom right, #e95950, #f1948e); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #e95950, #f1948e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #e95950, #f1948e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #e95950, #f1948e); /* Standard syntax */
+}
+
+#socialinstagram:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+	
+}
+
+#socialinstagram:active {
+	filter: none;
+      -webkit-filter: grayscale(0);
+}
+
+              /* TWITTER */
+
+#socialtwitter {
+
+	
+	background-color: #55acee;
+  background: -webkit-linear-gradient(bottom right, #55acee, #8bc6f4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #55acee, #8bc6f4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #55acee, #8bc6f4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #55acee, #8bc6f4); /* Standard syntax */
+}
+
+#socialtwitter:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+	
+}
+
+#socialtwitter:active {
+	filter: none;
+      -webkit-filter: grayscale(0);
+}
+
+
+
+             /* GOOGLE  PLUS */
+#socialgoogleplus {
+	
+	
+	background-color: #dd4b39;
+	 background: -webkit-linear-gradient(bottom right, #dd4b39, #e9897c); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #dd4b39, #e9897c); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #dd4b39, #e9897c); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #dd4b39, #e9897c); /* Standard syntax */
+}
+
+
+#socialgoogleplus:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+	
+}
+
+#socialgoogleplus:active {
+	filter: none;
+      -webkit-filter: grayscale(0);
+}		 
+
+			 
+			      /* LINKEDIN */
+				  
+ #sociallinkedin {
+	
+	
+	background-color: #007bb5;
+	 background: -webkit-linear-gradient(bottom right, #007bb5, #00aeff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #007bb5, #00aeff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #007bb5, #00aeff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #007bb5, #00aeff); /* Standard syntax */
+}
+
+
+#sociallinkedin:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+	
+}
+
+#sociallinkedin:active {
+	filter: none;
+      -webkit-filter: grayscale(0);
+}
+
+			 
+			/* PINTEREST */
+				  
+ #socialpinterest {
+	
+	background-color: #cb2027; 
+	 background: -webkit-linear-gradient(bottom right, #cb2027, #e34f54); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #cb2027, #e34f54); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #cb2027, #e34f54); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #cb2027, #e34f54); /* Standard syntax */
+}
+
+
+#socialpinterest:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+	
+}
+
+#socialpinterest:active {
+	filter: none;
+      -webkit-filter: grayscale(0);
+}
+
+
+			/* FLICKR */
+				  
+ #socialflickr {
+	
+	background-color: #ff0084;
+	 background: -webkit-linear-gradient(bottom right, #ff0084, #ff4da9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #ff0084, #ff4da9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #ff0084, #ff4da9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #ff0084, #ff4da9); /* Standard syntax */
+}
+
+
+#socialflickr:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+	
+}
+
+#socialflickr:active {
+	filter: none;
+      -webkit-filter: grayscale(0);
+}
+
+				
+
+				/* YOUTUBE */
+				
+				  
+ #socialyoutube {
+	
+	
+	background-color: #bb0000;
+	 background: -webkit-linear-gradient(bottom right, #bb0000, #ff0000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #bb0000, #ff0000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #bb0000, #ff0000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #bb0000, #ff0000); /* Standard syntax */
+}
+
+
+#socialyoutube:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+	
+}
+
+#socialyoutube:active {
+	filter: none;
+      -webkit-filter: grayscale(0);
+}
+
+
+
+.socialbutton {
+	
+	border-radius: 10px;
+	vertical-align: middle;
+	
+	
+}
+
+/* CONTACT -- CONNECT SOCIAL MEDIA BUTTONS */
+
+.button2 {
+  border-radius: 100px;
+  background-color: #339966;
+  
+  background: -webkit-linear-gradient(bottom right, #339966, #66cc99); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #339966, #66cc99); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #339966, #66cc99); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #339966, #66cc99); /* Standard syntax */
+  border: none;
+  color: #FFFAFA;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  width: 205px;
+  height: 60px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+  font-family: 'Philosopher', sans-serif;
+  text-shadow: 1px 1px #661a00;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '➩';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+/* END - CONTACT -- CONNECT SOCIAL MEDIA BUTTONS */
+
+
+#GoogleSearch {
+	
+	max-width: 250px;
+	
+	max-height: 65px;
+	
+	/* border: 2px solid rgba(77, 77, 77, 1.0);
+	border-radius: 10px; */
+	padding: 2px;
+	float: right;
+	background-color: white;
+	
+display: none;
+}
+
+	#SearchIcon {
+		display: inline-block;
+		float: right;
+		cursor: pointer;
+		border-radius: 5px;
+		background-color: #25ddb2;
+		border: 1px solid #4d4d4d;
+		
+	}
+	#SearchIcon:active {
+		color: #FFFAFA;
+		box-shadow: 5px 5px 2px #888888;
+	
+	}
+	#SearchIcon:hover {
+		color: #FFFAFA;
+		box-shadow: 5px 5px 2px #888888;
+	
+	}
+
+
+	#CloseIcon {
+		
+		cursor: pointer; float: right;
+		display: none;
+		border-radius: 5px;
+		background-color: #ff5c33;
+		border: 1px solid #4d4d4d;
+	}
+	#CloseIcon:active {
+		color: #FFFAFA;
+		box-shadow: 5px 5px 2px #888888;
+	
+	}
+	#CloseIcon:hover {
+		color: #FFFAFA;
+		box-shadow: 5px 5px 2px #888888;
+	
+	}
+	
+.citybuttonpic {
+	
+	vertical-align: middle;
+	max-height: 16px;
+	max-width: 16px;
+	
+	
+	
+}
+
+.cityfigure {
+	
+	display: inline-block;
+	min-width: 175px;
+	min-height: 175px;
+	
+margin: 2px;
+/* border: 2px solid rgba(77, 77, 77, 1.0);
+  */
+  border-radius: 0px;
+  border: 1px solid #707070;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE 6-9 */
+
+}
+
+.cityfigure:hover {
+	filter: none;
+      -webkit-filter: grayscale(0);
+transform: translateY(-4px);
+cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+	
+	box-shadow: 5px 5px 2px #888888;
+}
+
+.cityfigure:active {
+	filter: none;
+      -webkit-filter: grayscale(0);
+transform: translateY(-4px);
+ cursor: grabbing; 
+    cursor: -webkit-grabbing;
+	
+	box-shadow: 5px 5px 2px #888888;
+
+}
+
+
+
+@media screen and (max-width:680px) {
+	
+	
+	.cityfigure {
+		
+		min-width: 155px;
+		min-height: 155px;
+		
+		
+	}
+}
+@media screen and (max-width:640px) {
+	
+	
+	.cityfigure {
+		
+		min-width: 150px;
+		min-height: 150px;
+		
+		
+	}
+}
+
+@media screen and (max-width:600px) {
+	
+	.cityfigure {
+		
+		min-width: 145px;
+		min-height: 145px;
+		
+		
+	}
+	
+}
+@media screen and (max-width:560px) {
+	
+	.cityfigure {
+		
+		min-width: 140px;
+		min-height: 140px;
+		
+		
+	}
+	
+}
+
+@media screen and (max-width:520px) {
+	
+	.cityfigure {
+		
+		min-width: 135px;
+		min-height: 135px;
+		
+	}
+	
+	
+}
+
+@media screen and (max-width:480px) {
+	
+	.cityfigure {
+		
+		min-width: 130px;
+		min-height: 130px;
+		
+	}
+	
+	
+}
+
+@media screen and (max-width:440px) {
+	.cityfigure {
+		
+		min-width: 125px;
+		min-height: 125px;
+		
+	}
+	
+	
+}
+@media screen and (max-width:400px) {
+	.cityfigure {
+		
+		min-width: 120px;
+		min-height: 120px;
+		
+	}
+	
+	
+}
+
+@media screen and (max-width:360px) {
+	
+	.cityfigure {
+		
+		min-width: 115px;
+		min-height: 115px;
+		
+	}
+	
+	
+}
+@media screen and (max-width:320px) {
+	
+	.cityfigure {
+		
+		min-width: 110px;
+		min-height: 110px;
+		
+	}
+	
+	
+}
+@media screen and (max-width:300px) {
+	
+	.cityfigure {
+		
+		min-width: 105px;
+		min-height: 105px;
+		
+	}
+	
+	
+	
+}
+
+@media screen and (max-width:280px) {
+	
+	.cityfigure {
+		
+		min-width: 100px;
+		min-height: 100px;
+		
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+#ButtonNYC {
+	
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("IMAGES/City.Bridge.Photos/NYC.New.2.png");
+}
+
+#ButtonSanFran {
+	
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("IMAGES/City.Bridge.Photos/SF.New.2.png");
+	
+	
+}
+#ButtonBoston {
+	
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("IMAGES/City.Bridge.Photos/Boston.New.2.png");
+	
+	
+}
+
+#ButtonSeattle {
+	
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("IMAGES/City.Bridge.Photos/Seattle.New.2.png");
+	
+}
+
+#ButtonPhilly {
+	
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("IMAGES/City.Bridge.Photos/Philly.New.2.png");
+	
+}
+
+#ButtonLosAngeles {
+	
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("IMAGES/City.Bridge.Photos/LA.New.2.png");
+	
+}
+
+#ButtonChicago {
+	
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("IMAGES/City.Bridge.Photos/Chicago.New.2.png");
+	
+}
+
+#ButtonWashDC {
+	
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("IMAGES/City.Bridge.Photos/DC.New.2.png");
+	
+}
+
+#ButtonPortland {
+	
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("IMAGES/City.Bridge.Photos/Portland.New.2.png");
+	
+}
+
+#ButtonMiami {
+	
+	
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("IMAGES/City.Bridge.Photos/Miami.New.2.png");
+	
+}
+
+
+
+.cityshuffle {
+	
+	display: inline-block;
+	
+}
+
+
+
+
+
+
+ h1 {                          /* MAIN h1 WEBPAGE TITLE -- RED*/
+	/* background-image: url("IMAGES/Fieldset.Background.Transparent.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
+font-size: 30px;
+
+border-radius: 10px;
+
+ font-family: 'Philosopher', sans-serif;
+ 
+ color: #ff5c33;
+ 
+ text-shadow: 2px 1px #FFFAFA, 4px 4px 0px rgba(0,0,0,0.15);
+ /*text-shadow: 2px 2px #d9d9d9;*/
+ border: 2px solid rgba(77, 77, 77, 1.0);
+ 
+/* background-color: #FFFAFA; */
+background-color: #E8E8E8;
+	
+	  background: -webkit-linear-gradient(bottom right, #F8F8F8, #E8E8E8);/* #66c9ff*/ /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(left top, #F8F8F8, #E8E8E8); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(left top, #F8F8F8, #E8E8E8); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(to left top, #F8F8F8, #E8E8E8); /* Standard syntax */
+
+
+}
+
+.cityname {
+	
+	color: #707070;
+	font-size: 20px;
+}
+
+#HomeH1 {
+	
+font-size: 50px;
+
+text-align: center;
+
+ font-family: 'Philosopher', sans-serif;
+ 
+ color: #cc3300;
+ 
+ text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+ /*text-shadow: 2px 2px #d9d9d9;*/
+	
+	
+}
+
+
+h2 {                          /* MAIN h2 WEBPAGE under Title */
+
+font-size: 28px;
+
+text-align: center;
+
+font-family: 'Philosopher', sans-serif;
+ 
+ color: 	#FFFAFA;
+ 
+  text-shadow: 2px 1px black, 4px 4px 0px rgba(0,0,0,0.15);
+ 
+ text-align: left;
+ 
+ 
+}
+
+fieldset {
+	background-image: url("IMAGES/Fieldset.Background.Transparent.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
+margin: 10px;
+	
+	float: left;
+	min-width: 90%;
+	height: auto;
+	
+	height: auto;
+/*background-color: #E8E8E8;
+	
+	  background: -webkit-linear-gradient(bottom right, #F8F8F8, #E8E8E8);/* #66c9ff*/ /* For Safari 5.1 to 6.0 */
+ /*background: -o-linear-gradient(left top, #F8F8F8, #E8E8E8); /* For Opera 11.1 to 12.0 */
+/* background: -moz-linear-gradient(left top, #F8F8F8, #E8E8E8); /* For Firefox 3.6 to 15 */
+ /* background: linear-gradient(to left top, #F8F8F8, #E8E8E8); /* Standard syntax */
+	
+	border-radius: 10px;
+	
+	padding: 10px;
+	
+	border: 2px solid rgba(77, 77, 77, 1.0);
+	
+}
+
+#contentimg1 {
+	
+	max-width: 85;
+	max-height: 75;
+	
+	
+}
+
+#contentimg2 {
+	
+	max-width: 93;
+	max-height: 107;
+	
+	
+}
+ 
+/* *********************************** BUTTON LINKS UNDER IMAGES ******************************************** */
+
+.button {
+  border-radius: 100px;
+  
+  background-color: #339966;
+  
+  background: -webkit-linear-gradient(bottom right, #339966, #66cc99); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #339966, #66cc99); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #339966, #66cc99); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #339966, #66cc99); /* Standard syntax */
+  
+  
+  
+  
+  
+  border: none;
+  color: #FFFAFA;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  width: 220px;
+  height: 60px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
+  font-family: 'Philosopher', sans-serif;
+  text-shadow: 1px 1px #661a00;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '➩';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* ------------- BUTTON MINI-IMAGE ---------------- */
+
+
+
+/* ********************************** NAVIGATION BAR - HORIZONTAL - NOT IN USE!!! ******************************** */
+
+ 
+ul {
+
+    list-style-type: none;
+    padding: 2px;
+    /* overflow: hidden; MAKES THE BLACK NAVBAR BACKGROUND DISAPPEAR */
+	background-color: #707070;
+	
+
+    top: 0;
+    max-width: 100%;
+	height: auto;
+	font-family: 'Philosopher', sans-serif;
+	border-radius: 10px;
+	margin: 1px;
+	position: relative;
+	
+	}
+ 
+li {
+   display: inline-block;
+}
+
+
+
+li a:hover:not(.active):not(:last-child) {
+  
+	
+}
+li:last-child {
+	text-decoration: none;
+	
+	float: right;
+}
+ 
+/*
+.active {
+    background-color: #339966;
+  
+  background: -webkit-linear-gradient(bottom right, #339966, #66cc99); /* For Safari 5.1 to 6.0 */
+ /* background: -o-linear-gradient(left top, #339966, #66cc99); /* For Opera 11.1 to 12.0 */
+ /* background: -moz-linear-gradient(left top, #339966, #66cc99); /* For Firefox 3.6 to 15 */
+ /* background: linear-gradient(to left top, #339966, #66cc99); /* Standard syntax */
+/* }
+*/
+/*                                 RSS FEED CSS                                             */
+
+.rsswrap {
+	 background-image: url("IMAGES/Header.Background.Image.Transparent.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
+	display: inline-block;
+	max-width: 300px;
+	height: auto;
+	margin: 5px;
+	border: 2px solid rgba(77, 77, 77, 1.0);
+	padding: 15px;
+	border-radius: 10px;
+	
+}
+
+
+.rsswrap:hover{
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+	box-shadow: 5px 5px 2px #888888;
+	transform: translateY(-4px);
+}
+.rsswrap:active { 
+    cursor: grabbing; 
+    cursor: -webkit-grabbing;
+	box-shadow: 5px 5px 2px #888888;
+	transform: translateY(-4px);
+}
+
+@media screen and (max-width:680px) {
+	
+	.rsswrap {
+		
+		
+		
+	}
+}
+
+
+#newswrapper {
+	
+	background-image: url("IMAGES/sayagata-400px.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
+margin: 5px auto;
+	
+	float: left;
+	max-width: 100%;
+	height: auto;
+	height: auto;
+/*background-color: #E8E8E8;
+	
+	  background: -webkit-linear-gradient(bottom right, #F8F8F8, #E8E8E8);/* #66c9ff*/ /* For Safari 5.1 to 6.0 */
+ /*background: -o-linear-gradient(left top, #F8F8F8, #E8E8E8); /* For Opera 11.1 to 12.0 */
+/* background: -moz-linear-gradient(left top, #F8F8F8, #E8E8E8); /* For Firefox 3.6 to 15 */
+ /* background: linear-gradient(to left top, #F8F8F8, #E8E8E8); /* Standard syntax */
+	
+	border-radius: 10px;
+	
+	padding: 10px;
+	
+	border: 2px solid rgba(77, 77, 77, 1.0);
+}
+
+
+/* CONTACT FORM */
+
+/* #ContactForm {
+	
+	margin: 10px;
+	
+	float: left;
+	min-width: 90%;
+	height: auto;
+	
+	height: auto;
+	background-color: #00b3b3;
+	
+	  background: -webkit-linear-gradient(bottom right, #FFFAFA, #00b3b3);/* #66c9ff*/ /* For Safari 5.1 to 6.0 */
+ /* background: -o-linear-gradient(left top, #FFFAFA, #00b3b3); /* For Opera 11.1 to 12.0 */
+ /* background: -moz-linear-gradient(left top, #FFFAFA, #00b3b3); /* For Firefox 3.6 to 15 */
+ /* background: linear-gradient(to left top, #FFFAFA, #00b3b3); /* Standard syntax */
+	
+/*	border-radius: 10px;
+	
+	padding: 10px;
+	
+	border: 2px solid rgba(77, 77, 77, 1.0);
+	
+}
+*/
+.formsuggest {
+	
+	overflow: auto;
+	
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+	background-color: #707070;
+	
+border: 2px solid #FFFAFA;
+	
+	padding: 10px;
+	border-radius: 0;
+	
+	max-width: auto;
+	height: auto;
+	
+}
+/*
+#ConnectIcons {
+	
+	margin: 10px;
+	float: left;
+	max-width: 100%;
+	
+	height: auto;
+	border: 2px solid rgba(77, 77, 77, 1.0);
+	background-color: #00b3b3;
+	
+	  background: -webkit-linear-gradient(bottom right, #FFFAFA, #00b3b3);/* #66c9ff*/ /* For Safari 5.1 to 6.0 */
+ /* background: -o-linear-gradient(left top, #FFFAFA, #00b3b3); /* For Opera 11.1 to 12.0 */
+/*  background: -moz-linear-gradient(left top, #FFFAFA, #00b3b3); /* For Firefox 3.6 to 15 */
+ /* background: linear-gradient(to left top, #FFFAFA, #00b3b3); /* Standard syntax */
+	
+/*	border-radius: 10px;
+	
+	padding: 10px;
+	
+}
+*/
+.Connectbuttons {
+	
+	float: left;
+	width: 215px;
+	max-height: 100px;
+	border-radius: 100px;
+	margin: 5px;
+	padding: 2px;
+}
+
+#connectbackgroundfacebook {
+	
+	
+	background-color: #3B5998;
+	
+	  background: -webkit-linear-gradient(bottom right, #3B5998, #FFFAFA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #3B5998, #FFFAFA); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #3B5998, #FFFAFA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #3B5998, #FFFAFA); /* Standard syntax */
+	
+}
+
+#connectbackgroundinstagram {
+	
+	
+	background-color:  #e95950;
+	 background: -webkit-linear-gradient(bottom right, #FFFAFA, #e95950); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #FFFAFA, #e95950); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #FFFAFA, #e95950); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #FFFAFA, #e95950); /* Standard syntax */
+	
+}
+#connectbackgroundtwitter {
+	
+	
+	background-color: #55acee;
+	background: -webkit-linear-gradient(bottom right, #55acee, #FFFAFA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #55acee, #FFFAFA); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #55acee, #FFFAFA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #55acee, #FFFAFA); /* Standard syntax */
+	
+}
+#connectbackgroundgoogleplus {
+	
+	
+	background-color: #dd4b39;
+	background: -webkit-linear-gradient(bottom right, #FFFAFA, #dd4b39); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #FFFAFA, #dd4b39); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #FFFAFA, #dd4b39); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #FFFAFA, #dd4b39); /* Standard syntax */
+	
+}
+#connectbackgroundlinkedin {
+	
+	
+	background-color: #007bb5;
+	background: -webkit-linear-gradient(bottom right, #007bb5, #FFFAFA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #007bb5, #FFFAFA); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #007bb5, #FFFAFA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #007bb5, #FFFAFA); /* Standard syntax */
+	
+}
+
+#connectbackgroundpinterest {
+	
+	background-color: #cb2027;
+	background: -webkit-linear-gradient(bottom right, #FFFAFA, #cb2027); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #FFFAFA, #cb2027); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #FFFAFA, #cb2027); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #FFFAFA, #cb2027); /* Standard syntax */
+}
+#connectbackgroundflickr {
+	
+	background-color: #ff0084;
+	background: -webkit-linear-gradient(bottom right, #ff0084, #FFFAFA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #ff0084, #FFFAFA); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #ff0084, #FFFAFA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #ff0084, #FFFAFA); /* Standard syntax */
+	
+}
+#connectbackgroundyoutube {
+	
+	background-color: #bb0000;
+	background: -webkit-linear-gradient(bottom right, #FFFAFA, #bb0000); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #FFFAFA, #bb0000); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #FFFAFA, #bb0000); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #FFFAFA, #bb0000); /* Standard syntax */
+	
+}
+
+.ContactFormButton {
+	
+	padding: 5px;
+ border-radius: 100px;
+  
+ background-color: #339966;
+  
+  background: -webkit-linear-gradient(bottom right, #339966, #66cc99); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #339966, #66cc99); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #339966, #66cc99); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #339966, #66cc99); /* Standard syntax */
+  
+   padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  font-family: 'Philosopher', sans-serif;
+	font-size: 16px;
+	max-width: 100px;
+	height: auto;
+	margin: 5px;
+  
+  
+}
+
+.ContactFormButton:hover {
+	
+	background-color: #3e8e41;
+	
+}
+
+.ContactFormButton:active {
+	
+	background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+	
+}
+
+input[type="text"] {
+	
+	border-radius: 5px;
+	/* border: 5px inset #339966; */
+	
+}
+
+#comments {
+	
+	border-radius: 5px;
+	 max-width: 300px;
+    max-height: 150px;
+	min-width: 100px;
+	min-height: 50px;
+}
+
+/* SHUFFLE BUTTON */
+
+#shufflefigure {
+	
+	margin: auto;
+	position: relative; /* or absolute */
+
+}
+
+#buttonwrap {
+	
+
+	
+}
+
+#shufflebutton {
+  border-radius: 100px;
+  
+ background-color: #339966;
+  
+  background: -webkit-linear-gradient(bottom right, #339966, #66cc99); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #339966, #66cc99); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #339966, #66cc99); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #339966, #66cc99); /* Standard syntax */
+  
+   padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  font-family: 'Philosopher', sans-serif;
+	font-size: 16px;
+  max-width: 200px;
+  height: auto;
+  margin: 3px;
+  display: inline-block;
+  
+}
+
+@media screen and (max-width:680px) {
+	
+	#shufflebutton {
+		
+		padding: 10px 17px;
+		
+	}
+	
+}
+
+@media screen and (max-width:340px) {
+	
+	#shufflebutton {
+		
+		padding: 7px 5px;
+		
+	}
+	
+}
+
+
+
+#shufflebutton:hover {
+	
+	background-color: #3e8e41;
+	
+}
+
+#shufflebutton:active {
+	
+	background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+	
+}
+
+#shufflebutton2 {
+  border-radius: 100px;
+  
+ background-color: #339966;
+  
+  background: -webkit-linear-gradient(bottom right, #339966, #66cc99); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #339966, #66cc99); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #339966, #66cc99); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #339966, #66cc99); /* Standard syntax */
+  
+   padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  font-family: 'Philosopher', sans-serif;
+	font-size: 16px;
+  max-width: 200px;
+  margin: 3px;
+  display: inline-block;
+  
+}
+
+@media screen and (max-width:680px) {
+	
+	#shufflebutton2 {
+		
+		padding: 10px 17px;
+		
+	}
+	
+}
+
+@media screen and (max-width:340px) {
+	
+	#shufflebutton2 {
+		
+		padding: 7px 11px;
+		
+	}
+	
+}
+
+#shufflebutton2:hover {
+	
+	background-color: #3e8e41;
+	
+}
+
+#shufflebutton2:active {
+	
+	background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+	
+}
+
+/* COLLAPSIBLE NAV "ABOUT" BUTTON */
+
+.AboutCollapsible {
+	
+	
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+
+.navbutton {
+	
+	margin: 2px;
+	display: inline-block;
+    color: #FFFAFA;
+    text-align: center;
+    padding: 10px 12px;
+    
+	text-shadow: 1px 1px #661a00;
+	
+	background-color: #707070;
+   
+  
+	font-family: 'Philosopher', sans-serif;
+	font-size: 19px;
+	
+    text-decoration: none;
+	text-shadow: 1px 1px #661a00;
+	  
+	  vertical-align: middle;
+	border: 1px solid #FFFAFA;
+	border-radius: 10px;
+	
+}
+
+.navbutton:active {
+	
+	 background-color: #339966;
+  
+  background: -webkit-linear-gradient(bottom right, #339966, #66cc99); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #339966, #66cc99); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #339966, #66cc99); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #339966, #66cc99); /* Standard syntax */
+	
+	transform: translateY(1px);
+	border: 1px solid #339966;
+	
+}
+
+.navbutton:hover:not(.active) {
+	background-color: #66cc99;
+
+	
+	
+}
+
+#navhome {
+	
+	
+}
+#navnews {
+	
+	
+}
+
+#navnews:active {
+	
+	
+}
+
+#navnews:hover:not(.active) {
+	
+	
+}
+
+#navcontact {
+	
+}
+
+#navabout {
+	
+}
+
+
+
+#collapselink {
+	
+	text-decoration: none;
+	
+}
+
+
+                                                 /* DROPDOWN MENU (CONTACT) STYLE */
+
+.dropdown {
+	 position: relative;
+    display: inline-block;
+  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+	
+	
+	z-index: 100;
+    max-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.0);
+
+	font-size: 17px;
+	text-decoration: none;
+
+	height: auto;
+	font-family: 'Philosopher', sans-serif;
+	
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	font-family: 'Philosopher', sans-serif;
+   color: #FFFAFA;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	opacity: 1.0;
+	text-shadow: text-shadow: 1px 2px black;
+	border-radius: 100px;
+	border: 1px solid #FFFAFA;
+	background: rgba(112, 112, 112, 0.9); /* OPACITY */
+	margin: 1px;
+	text-align: center;
+text-shadow: 1px 1px #661a00;
+
+}
+
+
+
+/* Change color of dropdown links on active */
+.dropdown-content a:active {
+	transform: translateY(1px);
+	border: 1px solid #00b3b3;
+	background-color: #00b3b3;
+	color: #FFFAFA;
+  
+  background: -webkit-linear-gradient(bottom right, #008080, #00b3b3); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left top, #008080, #00b3b3); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left top, #008080, #00b3b3); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left top, #008080, #00b3b3); /* Standard syntax */
+ 
+  text-decoration: none;
+
+}
+
+.dropdown-content a:hover:not(.active)
+{
+	text-decoration: none;
+	color: #FFFAFA;
+	background-color: #00b3b3;
+	
+}
+
+.dropdown:hover .dropdown-content {
+	
+	display: block;
+}
+
+.dropdown:active .dropdown-content {
+	
+	display: block;
+}
+					
+					
+											/* HAMBURGER ICON */
+											
+											
+.container {
+    display: inline-block;
+    cursor: pointer;
+	vertical-align: middle;
+	margin: 2px;
+
+	border-radius: 0px;
+}
+
+.container:hover {
+	background-color: ;
+	
+
+}
+.container:active {
+	background-color: ;
+
+}
+
+@media screen and (min-width:681px) {
+	
+	#hamburger {
+		
+		display: none;
+		
+	}
+}
+@media screen and (max-width:680px) {
+  ul li:not(:first-child):not(:last-child) {display: none;}
+ #hamburger {
+    float: right;
+    display: inline-block;
+  }
+  
+ 
+
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+	background-color: #FFFAFA;
+}
+
+.bar1 {	
+	background-color: white;
+}
+
+.bar2 {
+	background-color: white;
+}
+
+.bar3 {
+	background-color: white;
+}	
+			
+			
+			/* NEWS & UPDATES FORM STYLES - MAILERLITE */
+			
+	
+    #mlb2-2944521,
+    #mlb2-2944521 *,
+    #mlb2-2944521 a:hover,
+    #mlb2-2944521 a:visited,
+    #mlb2-2944521 a:focus,
+    #mlb2-2944521 a:active {
+        overflow: visible;
+        position: static;
+        background: none;
+        border: none;
+        bottom: auto;
+        clear: none;
+        cursor: default;
+        float: none;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        text-indent: 0;
+        text-transform: none;
+        visibility: visible;
+        white-space: normal;
+        max-height: none;
+        max-width: none;
+        left: auto;
+        max-height: auto;
+        max-width: 500px;
+        right: auto;
+        top: auto;
+        width: auto;
+        z-index: auto;
+        text-shadow: none;
+        box-shadow: none;
+        outline: medium none;
+    }
+    
+    #mlb2-2944521 h4 {
+        font-weight: normal;
+    }
+    
+    #mlb2-2944521 .subscribe-form {
+	font-family: 'Philosopher', sans-serif;
+        padding: 20px;
+       max-width: 460px;
+        border: 2px solid #FFFAFA!important;
+       background-color: #707070;
+        border-radius: 0;
+    }
+    
+    #mlb2-2944521 .subscribe-form.ml-block-success {
+        width: 460px !important;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section.mb10 {
+        margin-bottom: 10px;
+        float: left;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section.mb0 {
+        margin-bottom: 0px;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section h4 {
+        margin: 0px 0px 10px 0px;
+        padding: 0px!important;
+        color: #FFFAFA !important;
+ 
+ text-shadow: 2px 2px black !important;
+        font-family: 'Philosopher', sans-serif;
+        font-size: 28px!important;
+        line-height: 100%;
+        text-align: center!important;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section p {
+        line-height: 150%;
+        padding: 0px!important;
+        margin: 0px 0px 10px 0px;
+        color: #000000!important;
+       font-family: 'Philosopher', sans-serif;
+        font-size: 14px!important;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section a {
+        font-size: 14px!important;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section .confirmation_checkbox {
+        line-height: 150%;
+        padding: 0px!important;
+        margin: 0px 0px 15px 0px !important;
+        color: #000000!important;
+        font-family: 'Philosopher', sans-serif;
+        font-size: 14px!important;
+        font-weight: normal !important;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section .confirmation_checkbox input[type="checkbox"] {
+        margin-right: 5px!important;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section .form-group {
+        margin-bottom: 15px;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section .form-group label {
+        float: left;
+        margin-bottom: 10px;
+        width: 100%;
+        line-height: 100%;
+        font-weight: bold;
+        color: #000000!important;
+        font-family: 'Philosopher', sans-serif;
+        font-size: 14px!important;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section .checkbox {
+        width: 100%;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section .checkbox label {
+        color: #000000!important;
+       font-family: 'Philosopher', sans-serif;
+        font-size: 14px!important;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section .checkbox input {
+        margin: 0px 5px 0px 0px;
+    }
+    
+    #mlb2-2944521 .subscribe-form .form-section .checkbox input[type=checkbox] {
+        -webkit-appearance: checkbox;
+    }
+    
+    #mlb2-2944521.ml-subscribe-form .form-group .form-control {
+        width: 100%;
+        font-size: 13px;
+        padding: 10px 10px;
+        height: auto;
+		font-family: 'Philosopher', sans-serif;
+        border-radius: 10px;
+        border: 1px solid #cc3300!important;
+        color: #000000!important;
+        background-color: #FFFFFF!important;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        clear: left;
+    }
+    
+    #mlb2-2944521.ml-subscribe-form button {
+        border: none !important;
+        cursor: pointer !important;
+        width: 100% !important;
+        border-radius: 0px !important;
+        height: 45px !important;
+        background-color: #339966!important;
+        color: #FFFAFA!important;
+        font-family: 'Philosopher', sans-serif;
+        font-size: 18px!important;
+        text-align: center !important;
+    }
+    
+    #mlb2-2944521.ml-subscribe-form button.gradient-on {
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+        background: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    }
+    
+    #mlb2-2944521.ml-subscribe-form button.gradient-on:hover {
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+        background: linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+    }
+    
+    #mlb2-2944521.ml-subscribe-form button[disabled] {
+        cursor: not-allowed!important;
+    }
+    
+    #mlb2-2944521.ml-subscribe-form .form-section.ml-error label {
+        color: red!important;
+    }
+    
+    #mlb2-2944521.ml-subscribe-form .form-group.ml-error label {
+        color: red!important;
+    }
+    
+    #mlb2-2944521.ml-subscribe-form .form-group.ml-error .form-control {
+        border-color: red!important;
+    }
+	
+	
+	
+	
+	/*                SIDE NAV                */
+	
+
+	
+	/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.6s; /* 0.5 second transition effect to slide in the sidenav */
+	opacity: 1.0;
+	font-family: 'Philosopher', sans-serif;
+	background-color: /*#4d4d4d;*/#FFFAFA;
+	/*background-image: url("IMAGES/swirl_pattern.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
+	/*background-image: url("IMAGES/footer_lodyas.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
+	border-radius: 10px;
+	
+	}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #4d4d4d;
+    display: block;
+    transition: 0.0s;
+	font-family: 'Philosopher', sans-serif;
+	border-radius: 10px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover:not(#sideX), .offcanvas a:focus{
+    color: #FFFAFA;
+	background-color: #707070;
+}
+.sidenav a:active:not(#sideX), .offcanvas a:focus{
+   color: #FFFAFA;
+	background-color: #707070;
+}
+
+#sideX:hover, .offcanvas a:focus {
+	
+	color: black;
+	
+}
+
+#sideX:active, .offcanvas a:focus {
+	
+	color: black;
+	
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 40px;}
+    .sidenav a {font-size: 18px;}
+}
+
+@media screen and (min-width: 681px) {
+#mySidenav {
+	
+	display: none;
+	
+}
+
+
+
+}
