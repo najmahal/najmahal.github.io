@@ -128,7 +128,7 @@ background-color: #0be2e2/*#0be2bb#33e8e8#0be2a9*/;
 	display: inline-block;
 	background-size: 183px 128px;
     background-repeat: no-repeat;
-	background-image: url("IMAGES/Main.Logo.Home.png");
+	background-image: url("Main.Logo.Home.png");
 	min-width: 183px;
 	min-height: 128px;
 	vertical-align: middle;
@@ -140,7 +140,7 @@ background-color: #0be2e2/*#0be2bb#33e8e8#0be2a9*/;
 @media screen and (max-width:680px) {
 	
 	#headerlefticon {
-		background-image: url("IMAGES/Main.Logo.Home.png");
+		background-image: url("Main.Logo.Home.png");
 		display: inline-block;
 	background-size: 165px 115px;
     background-repeat: no-repeat;
@@ -158,7 +158,7 @@ background-color: #0be2e2/*#0be2bb#33e8e8#0be2a9*/;
 @media screen and (max-width:600px) {
 	
 	#headerlefticon {
-		background-image: url("IMAGES/Main.Logo.Home.png");
+		background-image: url("Main.Logo.Home.png");
 		display: inline-block;
 	background-size: 149px 104px;
     background-repeat: no-repeat;
@@ -172,7 +172,7 @@ background-color: #0be2e2/*#0be2bb#33e8e8#0be2a9*/;
 @media screen and (max-width:520px) {
 	
 	#headerlefticon {
-		background-image: url("IMAGES/Main.Logo.Home.png");
+		background-image: url("Main.Logo.Home.png");
 		display: inline-block;
 	background-size: 134px 94px;
     background-repeat: no-repeat;
@@ -186,7 +186,7 @@ background-color: #0be2e2/*#0be2bb#33e8e8#0be2a9*/;
 @media screen and (max-width:440px) {
 	
 	#headerlefticon {
-		background-image: url("IMAGES/Main.Logo.Home.png");
+		background-image: url("Main.Logo.Home.png");
 		display: inline-block;
 	background-size: 121px 85px;
     background-repeat: no-repeat;
@@ -200,7 +200,7 @@ background-color: #0be2e2/*#0be2bb#33e8e8#0be2a9*/;
 @media screen and (max-width:360px) {
 	
 	#headerlefticon {
-		background-image: url("IMAGES/Main.Logo.Home.png");
+		background-image: url("Main.Logo.Home.png");
 		display: inline-block;
 	background-size: 109px 77px;
     background-repeat: no-repeat;
@@ -214,7 +214,7 @@ background-color: #0be2e2/*#0be2bb#33e8e8#0be2a9*/;
 @media screen and (max-width:280px) {
 	
 	#headerlefticon {
-		background-image: url("IMAGES/Main.Logo.Home.png");
+		background-image: url("Main.Logo.Home.png");
 		display: inline-block;
 	background-size: 98px 69px;
     background-repeat: no-repeat;
@@ -1286,7 +1286,7 @@ transform: translateY(-4px);
 	
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("IMAGES/City.Bridge.Photos/NYC.New.2.png");
+	background-image: url("NYC.New.2.png");
 }
 
 #ButtonSanFran {
@@ -1294,7 +1294,7 @@ transform: translateY(-4px);
 	
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("IMAGES/City.Bridge.Photos/SF.New.2.png");
+	background-image: url("SF.New.2.png");
 	
 	
 }
@@ -1303,7 +1303,7 @@ transform: translateY(-4px);
 	
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("IMAGES/City.Bridge.Photos/Boston.New.2.png");
+	background-image: url("Boston.New.2.png");
 	
 	
 }
@@ -1313,7 +1313,7 @@ transform: translateY(-4px);
 	
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("IMAGES/City.Bridge.Photos/Seattle.New.2.png");
+	background-image: url("Seattle.New.2.png");
 	
 }
 
@@ -1322,7 +1322,7 @@ transform: translateY(-4px);
 	
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("IMAGES/City.Bridge.Photos/Philly.New.2.png");
+	background-image: url("Philly.New.2.png");
 	
 }
 
@@ -1331,7 +1331,7 @@ transform: translateY(-4px);
 	
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("IMAGES/City.Bridge.Photos/LA.New.2.png");
+	background-image: url("LA.New.2.png");
 	
 }
 
@@ -1340,7 +1340,7 @@ transform: translateY(-4px);
 	
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("IMAGES/City.Bridge.Photos/Chicago.New.2.png");
+	background-image: url("Chicago.New.2.png");
 	
 }
 
@@ -1349,7 +1349,7 @@ transform: translateY(-4px);
 	
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("IMAGES/City.Bridge.Photos/DC.New.2.png");
+	background-image: url("DC.New.2.png");
 	
 }
 
@@ -1358,7 +1358,7 @@ transform: translateY(-4px);
 	
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("IMAGES/City.Bridge.Photos/Portland.New.2.png");
+	background-image: url("Portland.New.2.png");
 	
 }
 
@@ -1367,7 +1367,7 @@ transform: translateY(-4px);
 	
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-image: url("IMAGES/City.Bridge.Photos/Miami.New.2.png");
+	background-image: url("Miami.New.2.png");
 	
 }
 
