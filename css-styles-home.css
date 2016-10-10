@@ -1592,7 +1592,7 @@ li:last-child {
 /*                                 RSS FEED CSS                                             */
 
 .rsswrap {
-	 background-image: url("IMAGES/Header.Background.Image.Transparent.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
+	 background-image: url("Header.Background.Image.Transparent.png"); /* CC BY-SA 3.0 - Subtle Patterns © Atle Mo. Licensor in no way endorses me or my use. */
 	display: inline-block;
 	max-width: 300px;
 	height: auto;
