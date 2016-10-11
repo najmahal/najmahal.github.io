@@ -27,7 +27,7 @@
 	<!-- CSS STYLE SHEET FOR WHOLE WEBPAGE -->
 	<link href="css-styles-home.css" type="text/css" rel="stylesheet"/> 
 	
-	<!-- MOBILE TOUCH EVENT STYLE
+	<!-- MOBILE TOUCH EVENT STYLE 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 	-->
 	
@@ -57,11 +57,11 @@
 	
   <!-- JQUERY - GOOGLE -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script> 
   <!-- MOBILE TOUCH EVENTS 
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	-->
-  
+	
     <!-- BOOTSTRAP 
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 -->
@@ -71,7 +71,7 @@
   
   $(document).ready(function(){
 
-          $('div#Cities').each(function(){
+          $('div#content').each(function(){
 
                 // get current div
                 var $div_parent = $(this);
@@ -133,7 +133,7 @@ randomcity = function () {
  $(function() {
 
   $('#shufflebutton').click(function() {
-    $("div#Cities").randomize("div.cityshuffle");
+    $("div#content").randomize("div.cityshuffle");
   });
 
 });
@@ -166,39 +166,9 @@ $.fn.randomize = function(childElem) {
     $( "#content" ).disableSelection();
   } );
   </script>
- 
- 
- <script>
- 
- function myFunction(x) {
-    x.classList.toggle("change");
-}
- 
- </script>
 
- 
- 
- <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 
- <!-- open Searchbar -->
- 
 
-<!--
-<script>
-function show(target){
-document.getElementById("GoogleSearch").style.display = 'inline-block';
-}
-
-</script>
-<script>
-
-function hide(target){
-
-document.getElementById("GoogleSearch").style.display = 'none';
-}
-
-</script>
--->
   </head>
   <body>                                           <!-- BODY OF THE WEBPAGE -->
    
@@ -211,7 +181,7 @@ document.getElementById("GoogleSearch").style.display = 'none';
 <!-- MAIN LOGO -->  
 
 
-<a href="PROJECT1.html" id="headerleftlink"><div id="headerlefticon" title="CitySipping Home" alt="Main CitySipping.com Logo Linking to the Homepage"></div></a>
+<a href="PROJECT1.html" id="headerleftlink"><div id="headerlefticon" title="Main Logo" alt="Main CitySipping.com Logo Linking to the Homepage"></div></a>
 
 
 
@@ -250,16 +220,8 @@ document.getElementById("GoogleSearch").style.display = 'none';
  
   <li id="hamburger">
   <span onclick="openNav()">
-  <i id="MenuIcon" class="material-icons" title="Menu">menu</i><span id="MenuIconText" onclick="openNav()">Menu</span>
-  <!--
-  <div id="hamburgercontainer" class="container" title="Menu" onclick="myFunction(this)">
- 
- <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-
--->
+  <i id="MenuIcon" class="material-icons" title="Menu">menu</i><span id="MenuIconText" title="Menu" onclick="openNav()">Menu</span>
+  
 </span>
  
   </li>
@@ -298,7 +260,7 @@ document.getElementById("GoogleSearch").style.display = 'none';
   
  </div>
  
-</div>
+
 
 
 <script>
@@ -374,8 +336,8 @@ $("#CloseIcon").click(function(){
 
 </script>
 
-<br>
-	
+
+
 	<div id="content" onclick="closeNav()">
 	
 	
@@ -391,46 +353,49 @@ $("#CloseIcon").click(function(){
 
 
 	<!--NYC-->
-		<div class="cityshuffle"><a href="PROJECT1.nyc.html"><div class="cityfigure" id="ButtonNYC" title="New York City" alt="A digitally rendered color sketch of the Brooklyn Bridge, meant to represent New York City"></div></a></div>
+		<div class="cityshuffle"><a href="#"><div class="cityfigure" id="ButtonNYC" title="New York City" alt="A digitally rendered color sketch of the Brooklyn Bridge, meant to represent New York City"></div></a></div>
 		
 	<!--San Francisco-->	
-		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/San_Francisco"><div class="cityfigure" id="ButtonSanFran" title="San Francisco" alt="A digitally rendered color sketch of the Golden Gate Bridge, meant to represent the city of San Francisco"></div></a></div>
+		<div class="cityshuffle"><a href="#"><div class="cityfigure" id="ButtonSanFran" title="San Francisco" alt="A digitally rendered color sketch of the Golden Gate Bridge, meant to represent the city of San Francisco"></div></a></div>
 		
 	<!--Boston-->
-		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Boston"><div class="cityfigure" id="ButtonBoston" title="Boston" alt="A digitally rendered color sketch of the Leonard P. Zakim Bunker Hill Bridge, meant to represent the city of Boston"></div></a></div>
+		<div class="cityshuffle"><a href="#"><div class="cityfigure" id="ButtonBoston" title="Boston" alt="A digitally rendered color sketch of the Leonard P. Zakim Bunker Hill Bridge, meant to represent the city of Boston"></div></a></div>
 		
 	<!--Seattle-->
-		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Seattle"><div class="cityfigure" id="ButtonSeattle" title="Seattle" alt="A digitally rendered color sketch of the Fremont Bridge, meant to represent the city of Seattle"></div></a></div>
+		<div class="cityshuffle"><a href="#"><div class="cityfigure" id="ButtonSeattle" title="Seattle" alt="A digitally rendered color sketch of the Fremont Bridge, meant to represent the city of Seattle"></div></a></div>
 		
 	<!--Philly-->
-		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Philadelphia"><div class="cityfigure" id="ButtonPhilly" title="Philadelphia" alt="A digitally rendered color sketch of the Benjamin Franklin Bridge, meant to represent the city of Philadelphia"></div></a></div>
+		<div class="cityshuffle"><a href="#"><div class="cityfigure" id="ButtonPhilly" title="Philadelphia" alt="A digitally rendered color sketch of the Benjamin Franklin Bridge, meant to represent the city of Philadelphia"></div></a></div>
 		
 	<!--Los Angeles-->
-		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Los_Angeles"><div class="cityfigure" id="ButtonLosAngeles" title="Los Angeles" alt="A digitally rendered color sketch of the Vincent Thomas Bridge, meant to represent the city of Los Angeles"></div></a></div>
+		<div class="cityshuffle"><a href="#"><div class="cityfigure" id="ButtonLosAngeles" title="Los Angeles" alt="A digitally rendered color sketch of the Vincent Thomas Bridge, meant to represent the city of Los Angeles"></div></a></div>
 		
 	<!--Chicago-->
-		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Chicago"><div class="cityfigure" id="ButtonChicago" title="Chicago" alt="A digitally rendered clor sketch of the movable Loop Bridges, meant to represent the city of Chicago"></div></a></div>
+		<div class="cityshuffle"><a href="#"><div class="cityfigure" id="ButtonChicago" title="Chicago" alt="A digitally rendered clor sketch of the movable Loop Bridges, meant to represent the city of Chicago"></div></a></div>
 		
 	<!--Washington, DC-->
-		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Washington,_D.C."><div class="cityfigure" id="ButtonWashDC" title="Washington, D.C." alt="A digitally rendered color sketch of the Arlington Memorial Bridge, meant to represent Washington, D.C."></div></a></div>		
+		<div class="cityshuffle"><a href="#"><div class="cityfigure" id="ButtonWashDC" title="Washington, D.C." alt="A digitally rendered color sketch of the Arlington Memorial Bridge, meant to represent Washington, D.C."></div></a></div>		
 		
 	<!--Portland-->
-		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Portland,_Oregon"><div class="cityfigure" id="ButtonPortland" title="Portland" alt="A digitally rendered color sketch of the St. Johns Bridge, meant to represent the city of Portland"></div></a></div>
+		<div class="cityshuffle"><a href="#"><div class="cityfigure" id="ButtonPortland" title="Portland" alt="A digitally rendered color sketch of the St. Johns Bridge, meant to represent the city of Portland"></div></a></div>
 		
 	<!--Miami-->
-		<div class="cityshuffle"><a href="https://en.wikipedia.org/wiki/Miami"><div class="cityfigure" id="ButtonMiami" title="Miami" alt="A digitally rendered color sketch of the Port of Miami Bridge, meant to represent the city of Miami"></div></a></div>
+		<div class="cityshuffle"><a href="#"><div class="cityfigure" id="ButtonMiami" title="Miami" alt="A digitally rendered color sketch of the Port of Miami Bridge, meant to represent the city of Miami"></div></a></div>
 	<!-- </div> -->
 
+	
 	
 </div>  <!-- "content" div END -->
 
 	<footer onclick="closeNav()">            <!-- WEBPAGE FOOTER & COPYRIGHT -->
-	<figure id="SocialCopyFigure">
+	
 	<div id="SocialMediaWrap">
 	
 	<a href="http://www.facebook.com/citysipping" title="Facebook" alt="Link to the CitySipping.com Facebook page"><div id="socialfacebook" class="socialcircle"></div></a>
 	<a href="http://www.instagram.com/citysipping" title="Instagram" alt="Link to the CitySipping.com Instagram page"><div id="socialinstagram" class="socialcircle"></div></a>
 	<a href="http://www.twitter.com/citysipping" title="Twitter" alt="Link to the CitySipping.com Twitter page"><div id="socialtwitter" class="socialcircle"></div></a>
+	
+	
 	<a href="http://www.google.com" title ="Google+" alt="Link to the CitySipping.com GooglePlus page"><div id="socialgoogleplus" class="socialcircle"></div></a>
 	<a href="http://www.linkedin.com" title="Linkedin" alt="Link to the CitySipping.com Linkedin page"><div id="sociallinkedin" class="socialcircle"></div></a>
 	<a href="https://www.pinterest.com/citysipping" title="Pinterest" alt="Link to the CitySipping.com Pinterest page"><div id="socialpinterest" class="socialcircle"></div></a>
@@ -439,13 +404,13 @@ $("#CloseIcon").click(function(){
 	
 	</div>
 
-	
+	<br><br><br>
 	
 	<div id="CopyRightWrap">
 
 	<p>All content copyright <span id="copyrightsymbol">&copy;</span> 2016, <span id="footermyname">CitySipping.com</span> . All Rights Reserved.</p>
 	</div>
-	</figure>
+	
 	</footer>
 	
 	<!--  </span>    onclick= closeNav() -->
@@ -455,3 +420,4 @@ $("#CloseIcon").click(function(){
   </body>
 
 </html>
+
